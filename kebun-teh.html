@@ -216,6 +216,87 @@ body:not(.opened){overflow:hidden}
   .cov-a{opacity:1 !important}
   html{scroll-behavior:auto}
 }
+
+/* ================= PASS BESPOKE: GARIS KONTUR & UAP TEH ================= */
+.contour-divider{position:relative;height:44px;margin:-14px 0 -30px;z-index:1;pointer-events:none;overflow:visible}
+.contour-divider svg{width:100%;height:44px;display:block}
+.contour-divider.flip svg{transform:scaleX(-1)}
+.contour-divider .shimmer{animation:contourShimmer 7s ease-in-out infinite alternate}
+@keyframes contourShimmer{from{opacity:.25}to{opacity:.75}}
+section{padding-top:74px}
+/* kepala section duduk di teras */
+.sec-head{background:linear-gradient(180deg,rgba(34,57,31,.94),rgba(34,57,31,.88));border-radius:0 0 26px 26px / 0 0 20px 20px;padding:20px 14px 16px;margin:-74px -22px 26px;box-shadow:0 14px 26px rgba(20,34,16,.35);border-bottom:3px solid rgba(185,141,79,.65)}
+.sec-head .sec-title{color:#fff8e2;text-shadow:0 2px 10px rgba(0,0,0,.45)}
+.sec-head .sec-sub{background:rgba(247,241,222,.14);color:#eef3df;box-shadow:none}
+.sec-head .sec-kicker{background:rgba(247,241,222,.92)}
+#penutup .sec-head{background:linear-gradient(180deg,rgba(20,34,16,.65),rgba(20,34,16,.45))}
+/* uap teh */
+.steam{position:absolute;pointer-events:none;z-index:5}
+.steam i{position:absolute;bottom:0;border-radius:50%;background:radial-gradient(ellipse at center,rgba(255,255,255,.85),rgba(255,255,255,0) 68%);filter:blur(3px);opacity:0;animation:steamRise 4.6s ease-in-out infinite}
+.steam i:nth-child(1){left:6px;width:16px;height:44px;animation-delay:0s}
+.steam i:nth-child(2){left:24px;width:22px;height:60px;animation-delay:-1.5s;animation-duration:5.4s}
+.steam i:nth-child(3){left:46px;width:14px;height:38px;animation-delay:-2.9s;animation-duration:4.1s}
+.steam i:nth-child(4){left:62px;width:19px;height:52px;animation-delay:-.8s;animation-duration:5s}
+.steam i:nth-child(5){left:82px;width:12px;height:34px;animation-delay:-3.6s;animation-duration:3.8s}
+@keyframes steamRise{0%{transform:translateY(6px) translateX(0) scale(.7);opacity:0}25%{opacity:.85}60%{opacity:.55}100%{transform:translateY(-58px) translateX(7px) scale(1.25);opacity:0}}
+/* teko raksasa sampul */
+.giant-teapot{position:absolute;left:-14px;bottom:-4px;width:124px;z-index:3;pointer-events:none;filter:drop-shadow(0 14px 22px rgba(0,0,0,.45))}
+.giant-teapot img{width:100%;display:block}
+.giant-teapot .steam{left:50%;margin-left:-52px;bottom:88%;width:104px;height:70px}
+/* cahaya pagi + embun */
+.sun-glow{position:absolute;width:190px;height:190px;border-radius:50%;background:radial-gradient(circle,rgba(255,236,170,.55),rgba(255,236,170,0) 65%);pointer-events:none;z-index:2;animation:sunPulse 6s ease-in-out infinite alternate}
+@keyframes sunPulse{from{transform:scale(.88);opacity:.55}to{transform:scale(1.12);opacity:1}}
+.dew{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,rgba(210,235,200,.25) 70%);pointer-events:none;z-index:4;animation:dewTwinkle 3.2s ease-in-out infinite alternate}
+@keyframes dewTwinkle{from{opacity:.25;transform:scale(.75)}to{opacity:1;transform:scale(1.15)}}
+/* kabut menipis saat undangan dibuka */
+body.opening #cover .mist{opacity:0 !important;transition:opacity .8s ease}
+.morning-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(238,242,230,.85),rgba(238,242,230,.25));z-index:2;pointer-events:none;opacity:1}
+body.opened .morning-veil{animation:veilThin 3.4s ease .2s both}
+@keyframes veilThin{from{opacity:1}to{opacity:0;visibility:hidden}}
+/* countdown: nampan bambu + medali + cincin daun berputar */
+.cd-wrap{position:relative;z-index:3;margin-top:6px}
+.cd-tray{background:linear-gradient(180deg,#c7a468,#a97f4c);border-radius:22px;padding:16px 10px 14px;box-shadow:0 16px 30px rgba(34,57,31,.35), inset 0 2px 0 rgba(255,244,214,.65), inset 0 -8px 16px rgba(84,57,29,.35);position:relative}
+.cd-tray::before{content:"";position:absolute;inset:7px;border:1.5px dashed rgba(84,57,29,.45);border-radius:16px;pointer-events:none}
+.cd-tray .steam{left:50%;margin-left:-52px;top:-58px;width:104px;height:56px}
+.cd-row{margin-top:0}
+.cd-box{border-radius:50%;width:72px;height:72px;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+.cd-box::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px dashed rgba(185,141,79,.85);animation:ringSpin 34s linear infinite}
+.cd-box:nth-child(2)::after{animation-duration:44s;animation-direction:reverse}
+.cd-box:nth-child(3)::after{animation-duration:38s}
+.cd-box:nth-child(4)::after{animation-duration:48s;animation-direction:reverse}
+@keyframes ringSpin{to{transform:rotate(360deg)}}
+.cd-box b{font-size:23px}
+/* galeri: label kaleng teh vintage */
+.frame-kaleng{border-radius:46% 46% 18px 18px / 22% 22% 14px 14px;border:4px solid #2e5427;background:linear-gradient(165deg,#3f6b35,#22391f);padding:9px 7px 7px}
+.frame-kaleng::before{inset:5px;border-radius:44% 44% 14px 14px / 20% 20% 12px 12px;border:1.5px solid rgba(215,175,105,.8)}
+.frame-kaleng img{border-radius:42% 42% 10px 10px / 18% 18% 10px 10px}
+.tin-chip{position:absolute;top:-13px;left:50%;transform:translateX(-50%);z-index:5;background:linear-gradient(180deg,#f7f1de,#eadfc2);color:#22391f;border:1.5px solid #b98d4f;border-radius:999px;font-size:9.5px;letter-spacing:.16em;font-weight:bold;padding:4px 12px;box-shadow:0 6px 14px rgba(34,57,31,.3);white-space:nowrap;animation:softBob 5s ease-in-out infinite alternate}
+.gal-cap{border:1.5px solid rgba(185,141,79,.55)}
+/* kisah: menaiki teras */
+.story{max-width:340px}
+.story-item{padding-bottom:30px}
+.story-item:nth-child(1){margin-left:0}
+.story-item:nth-child(2){margin-left:26px}
+.story-item:nth-child(3){margin-left:52px}
+.story-item:nth-child(4){margin-left:78px}
+.story-item::after{content:"";position:absolute;left:-14px;right:-6px;bottom:12px;height:12px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(63,107,53,.4),rgba(63,107,53,0) 70%);z-index:-1}
+.story-year{background:#22391f;color:#f2ecd4;display:inline-block;padding:4px 11px;border-radius:999px;box-shadow:0 5px 12px rgba(34,57,31,.3)}
+/* reveal menaiki teras */
+.rv-teras{transform:translateY(38px) translateX(-14px)}
+.rv-teras-r{transform:translateY(38px) translateX(14px)}
+.rv-climb{transform:translateY(52px) scale(.94)}
+/* teks kecil ikut bernyawa setelah tampil */
+.sec-kicker.in,.gal-cap.in,.rail-label.in{animation:softBob 5.2s ease-in-out infinite alternate}
+@keyframes softBob{from{transform:translateY(0)}to{transform:translateY(-2.5px)}}
+/* strip teras lebar */
+.terra-strip{width:112%;max-width:none;margin-left:-6%;display:block;position:relative;z-index:2;animation:stripDrift 11s ease-in-out infinite alternate}
+@keyframes stripDrift{from{transform:translateX(-4px)}to{transform:translateX(4px)}}
+@media (prefers-reduced-motion: reduce){
+  .steam i,.sun-glow,.dew,.cd-box::after,.tin-chip,.terra-strip,.contour-divider .shimmer,.sec-kicker.in,.gal-cap.in,.rail-label.in{animation:none !important}
+  .morning-veil{display:none}
+  .rv-teras,.rv-teras-r,.rv-climb{opacity:1 !important;transform:none !important}
+}
+
 </style>
 </head>
 <body>
@@ -234,6 +315,17 @@ body:not(.opened){overflow:hidden}
     <img class="sprite tegak" src="assets/undangya/kebun-teh/bunga-liar.webp" alt="" style="left:12px;bottom:64px;width:74px;animation-duration:8s;animation-delay:-2s">
     <img class="sprite tegak" src="assets/undangya/kebun-teh/lavender.webp" alt="" style="right:16px;bottom:88px;width:62px;animation-duration:7s;animation-delay:-5s">
     <img class="sprite gantung" src="assets/undangya/kebun-teh/lentera.webp" alt="" style="right:20px;top:-6px;width:44px;animation-duration:8.5s">
+    
+    <div class="sun-glow" style="left:-46px;top:9%"></div>
+    <div class="giant-teapot" aria-hidden="true"><img src="assets/undangya/kebun-teh/kt2-teko-besar.webp" alt=""><span class="steam"><i></i><i></i><i></i><i></i><i></i></span></div>
+    <img class="sprite tegak" src="assets/undangya/kebun-teh/pucuk-teh.webp" alt="" style="left:8px;top:120px;width:52px;animation-duration:6.8s;animation-delay:-1s">
+    <img class="sprite tegak" src="assets/undangya/kebun-teh/pakis.webp" alt="" style="right:-20px;bottom:150px;width:88px;animation-duration:9.4s;animation-delay:-4s">
+    <span class="dew" style="left:18%;top:26%;width:9px;height:9px"></span>
+    <span class="dew" style="left:78%;top:20%;width:7px;height:7px;animation-delay:-1.2s"></span>
+    <span class="dew" style="left:86%;top:44%;width:10px;height:10px;animation-delay:-2s"></span>
+    <span class="dew" style="left:10%;top:52%;width:7px;height:7px;animation-delay:-.6s"></span>
+    <span class="dew" style="left:70%;top:60%;width:8px;height:8px;animation-delay:-2.6s"></span>
+    <span class="dew" style="left:32%;top:14%;width:6px;height:6px;animation-delay:-1.7s"></span>
     <div class="cover-content">
       <div>
         <svg class="sec-icon" viewBox="0 0 48 48" fill="none" stroke="#f7f1de" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="color:#f7f1de"><path d="M24 42 C24 30 24 20 24 12"/><path d="M24 26 C16 26 10 20 9 11 C18 12 24 17 24 26 Z" fill="rgba(169,189,147,.35)"/><path d="M24 20 C31 20 37 15 38 7 C30 8 24 12 24 20 Z" fill="rgba(169,189,147,.35)"/><path d="M24 12 C21 8 21 4 24 2 C27 4 27 8 24 12 Z" fill="rgba(247,241,222,.4)"/></svg>
@@ -259,6 +351,7 @@ body:not(.opened){overflow:hidden}
   <main>
     <!-- ================= PEMBUKA ================= -->
     <section id="sambutan">
+      <div class="morning-veil" aria-hidden="true"></div>
       <div class="mist" style="top:6%"></div>
       <div class="fall-field sec-fall" aria-hidden="true"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/pakis.webp" alt="" style="left:-30px;bottom:0;width:120px;animation-duration:8.5s">
@@ -278,18 +371,20 @@ body:not(.opened){overflow:hidden}
       </div>
       <div class="rv rv-zoom" style="position:relative;z-index:3">
         <p class="rv rv-down" style="text-align:center;font-size:11px;letter-spacing:.3em;color:#2e5427;font-weight:bold;margin-top:30px;background:rgba(247,241,222,.8);border-radius:999px;padding:6px 10px">MENGHITUNG HARI BAHAGIA</p>
-        <div class="cd-row">
+        <div class="cd-wrap"><div class="cd-tray"><span class="steam" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><div class="cd-row">
           <div class="cd-box rv rv-pop d1"><b id="cdD">0</b><span>HARI</span></div>
           <div class="cd-box rv rv-pop d2"><b id="cdH">00</b><span>JAM</span></div>
           <div class="cd-box rv rv-pop d3"><b id="cdM">00</b><span>MENIT</span></div>
           <div class="cd-box rv rv-pop d4"><b id="cdS">00</b><span>DETIK</span></div>
-        </div>
+        </div></div></div>
       </div>
     </section>
 
     <!-- ================= MEMPELAI ================= -->
+    <div class="contour-divider" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="mempelai">
       <div class="mist m2" style="top:20%"></div>
+      <img class="sprite tegak" src="assets/undangya/kebun-teh/kt2-pucuk-embun.webp" alt="" style="left:4px;top:120px;width:64px;animation-duration:7.8s;animation-delay:-1.5s">
       <img class="sprite tegak" src="assets/undangya/kebun-teh/bambu.webp" alt="" style="right:-36px;top:60px;width:110px;animation-duration:9.5s">
       <img class="sprite tegak" src="assets/undangya/kebun-teh/bunga-liar.webp" alt="" style="left:2px;bottom:20px;width:80px;animation-duration:7.6s;animation-delay:-4s">
       <div class="sec-head">
@@ -299,14 +394,14 @@ body:not(.opened){overflow:hidden}
         <p class="sec-sub rv rv-up d3">Dengan segala kerendahan hati, kami memperkenalkan kedua mempelai</p>
       </div>
       <img class="orn-img rv rv-rotr d2" src="assets/undangya/kebun-teh/kt-daun-cincin.webp" alt="" width="110">
-      <div class="card rv rv-left" style="text-align:center">
+      <div class="card rv rv-teras" style="text-align:center">
         <div class="frame-kayu rv rv-zoom d1" style="display:inline-block"><img class="couple-photo" src="assets/undangya/kebun-teh/bride.webp" alt="Mempelai wanita Meyzsa Putri Ananda berbusana gaun krem-sage dan hijab krem di kebun teh"></div>
         <h3 class="name-big rv rv-up d1">Meyzsa Putri Ananda, S.Pd.</h3>
         <p class="parents rv rv-up d2">Putri dari<br><b>Bapak H. Muhammad Ridwan</b><br>&amp; <b>Ibu Hj. Siti Aminah</b></p>
         <a class="ig-link rv rv-pop d3" href="https://instagram.com/meyzsa.contoh" target="_blank" rel="noopener">@meyzsa.contoh</a>
       </div>
       <div class="amp rv rv-zoom">&amp;</div>
-      <div class="card rv rv-right" style="text-align:center">
+      <div class="card rv rv-teras-r" style="text-align:center">
         <div class="frame-kayu rv rv-zoom d1" style="display:inline-block"><img class="couple-photo" src="assets/undangya/kebun-teh/groom.webp" alt="Mempelai pria Ahmad Fahrezzi Pratama berjas hijau lumut di kebun teh"></div>
         <h3 class="name-big rv rv-up d1">Ahmad Fahrezzi Pratama, S.T.</h3>
         <p class="parents rv rv-up d2">Putra dari<br><b>Bapak H. Bambang Sutrisno</b><br>&amp; <b>Ibu Hj. Ratna Dewi</b></p>
@@ -315,6 +410,7 @@ body:not(.opened){overflow:hidden}
     </section>
 
     <!-- ================= ACARA ================= -->
+    <div class="contour-divider flip" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="acara">
       <div class="mist m3" style="top:10%"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/pinus.webp" alt="" style="left:-16px;top:120px;width:84px;animation-duration:8.8s">
@@ -326,6 +422,7 @@ body:not(.opened){overflow:hidden}
         <p class="sec-sub rv rv-up d3">Sabtu, 12 Juni 2027 — kami nantikan kehadiran Anda</p>
       </div>
       <img class="orn-img rv rv-up d2" src="assets/undangya/kebun-teh/kt-gunung-matahari.webp" alt="" width="138">
+      <img class="orn-img rv rv-climb d3" src="assets/undangya/kebun-teh/kt2-tangga-teras.webp" alt="" width="190" style="margin-top:-8px">
       <div class="card rv rv-up">
         <h3 class="sub-h rv rv-down">Akad Nikah</h3>
         <p class="event-time rv rv-up d1"><b>Sabtu, 12 Juni 2027</b><br>Pukul 08.00 – 10.00 WIB</p>
@@ -368,6 +465,7 @@ body:not(.opened){overflow:hidden}
     </section>
 
     <!-- ================= GALERI ================= -->
+    <div class="contour-divider" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="galeri">
       <div class="mist" style="top:4%"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/kt-keranjang-petik.webp" alt="" style="right:-14px;bottom:6px;width:92px;animation-duration:8.6s">
@@ -377,26 +475,28 @@ body:not(.opened){overflow:hidden}
         <h2 class="sec-title rv rv-up d2">Petikan Kisah Kami</h2>
         <p class="sec-sub rv rv-up d3">Delapan potret di kebun teh — ketuk untuk memperbesar</p>
       </div>
+      <img class="orn-img rv rv-pop d2" src="assets/undangya/kebun-teh/kt2-kaleng-teh.webp" alt="" width="86">
       <div class="gal-hint rv rv-down">— GESER KANAN · KIRI —</div>
-      <div class="rail-label rv rv-up d1">POTRET BERFRAME KAYU &amp; TALI RAMI</div>
+      <div class="rail-label rv rv-up d1">FLIGHT TEH · LABEL KALENG VINTAGE</div>
       <div class="gal-rail" id="railMain">
-        <div class="gal-slide rv rv-up"><span class="gal-num rv rv-pop d2">01 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-1.webp" alt="Pasangan bergandengan di jalur setapak kebun teh terasering" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Jalur Setapak Kebun Teh</figcaption></figure></div>
-        <div class="gal-slide rv rv-up"><span class="gal-num rv rv-pop d2">02 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-2.webp" alt="Pasangan menikmati teh di pondok teh kayu" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Pondok Teh</figcaption></figure></div>
-        <div class="gal-slide rv rv-up"><span class="gal-num rv rv-pop d2">04 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-4.webp" alt="Pasangan di jembatan bambu di atas sungai kecil" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Jembatan Bambu</figcaption></figure></div>
-        <div class="gal-slide rv rv-up"><span class="gal-num rv rv-pop d2">07 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-7.webp" alt="Pasangan di depan pabrik teh tua" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Pabrik Teh Tua</figcaption></figure></div>
+        <div class="gal-slide rv rv-up"><span class="tin-chip">KALENG No. 01 · PANEN 2027</span><span class="gal-num rv rv-pop d2">01 / 08</span><figure><div class="frame-teh frame-kaleng"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-1.webp" alt="Pasangan bergandengan di jalur setapak kebun teh terasering" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Seduhan Pertama — Pagi di Puncak</figcaption></figure></div>
+        <div class="gal-slide rv rv-up"><span class="tin-chip">KALENG No. 02 · PANEN 2027</span><span class="gal-num rv rv-pop d2">02 / 08</span><figure><div class="frame-teh frame-kaleng"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-2.webp" alt="Pasangan menikmati teh di pondok teh kayu" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Seduhan Kedua — Teduh Pondok Teh</figcaption></figure></div>
+        <div class="gal-slide rv rv-up"><span class="tin-chip">KALENG No. 04 · PANEN 2027</span><span class="gal-num rv rv-pop d2">04 / 08</span><figure><div class="frame-teh frame-kaleng"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-4.webp" alt="Pasangan di jembatan bambu di atas sungai kecil" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Seduhan Keempat — Jembatan Bambu</figcaption></figure></div>
+        <div class="gal-slide rv rv-up"><span class="tin-chip">KALENG No. 07 · PANEN 2027</span><span class="gal-num rv rv-pop d2">07 / 08</span><figure><div class="frame-teh frame-kaleng"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-7.webp" alt="Pasangan di depan pabrik teh tua" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Seduhan Ketujuh — Pabrik Teh Tua</figcaption></figure></div>
       </div>
       <div class="rail-meta rv rv-up d2"><span class="rail-frac rv rv-pop d1" id="fracMain">1 / 4</span><span class="rail-dots" id="dotsMain"></span></div>
-      <div class="rail-label rv rv-up d1">POTRET LEPAS · TANPA FRAME</div>
+      <div class="rail-label rv rv-up d1">SEDUHAN LEPAS · FOTO LEBAR BARISAN TEH</div>
       <div class="gal-rail" id="railSub">
-        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">03 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-3.webp" alt="Pasangan piknik di kebun teh dengan keranjang anyaman" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Piknik di Kebun</figcaption></figure></div>
-        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">05 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-5.webp" alt="Pasangan di tengah terasering berkabut pagi" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Kabut Pagi di Terasering</figcaption></figure></div>
-        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">06 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-6.webp" alt="Pasangan memandang senja pegunungan dari bukit kebun teh" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Senja Pegunungan</figcaption></figure></div>
-        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">08 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-8.webp" alt="Pasangan di tepi danau pegunungan yang berkabut" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Tepi Danau Pegunungan</figcaption></figure></div>
+        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">03 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-3.webp" alt="Pasangan piknik di kebun teh dengan keranjang anyaman" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Seduhan Ketiga — Piknik di Kebun</figcaption></figure></div>
+        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">05 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-5.webp" alt="Pasangan di tengah terasering berkabut pagi" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Seduhan Kelima — Kabut Pagi</figcaption></figure></div>
+        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">06 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-6.webp" alt="Pasangan memandang senja pegunungan dari bukit kebun teh" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Seduhan Keenam — Senja Pegunungan</figcaption></figure></div>
+        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">08 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-8.webp" alt="Pasangan di tepi danau pegunungan yang berkabut" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Seduhan Kedelapan — Tepi Danau</figcaption></figure></div>
       </div>
       <div class="rail-meta rv rv-up d2"><span class="rail-frac rv rv-pop d1" id="fracSub">1 / 4</span><span class="rail-dots" id="dotsSub"></span></div>
     </section>
 
     <!-- ================= KISAH CINTA ================= -->
+    <div class="contour-divider flip" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="kisah">
       <div class="mist m2" style="top:14%"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/rumpun-teh.webp" alt="" style="right:-28px;bottom:6px;width:120px;animation-duration:8.2s;animation-delay:-2s">
@@ -404,38 +504,39 @@ body:not(.opened){overflow:hidden}
         <svg class="sec-icon rv rv-rot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 30 C12 30 16 22 24 22 C32 22 36 30 44 30"/><path d="M14 30 V38 M34 30 V38"/><path d="M10 38 H18 M30 38 H38"/><path d="M24 22 V14"/><path d="M18 14 H30"/></svg>
         <div class="sec-kicker rv rv-down d1">Love Story</div>
         <h2 class="sec-title rv rv-up d2">Kisah Kami</h2>
-        <p class="sec-sub rv rv-up d3">Empat babak, seperti empat musim di kebun teh</p>
+        <p class="sec-sub rv rv-up d3">Empat teras menaiki puncak — dari benih bertemu sampai hari bahagia</p>
       </div>
       <img class="orn-img rv rv-up d2" src="assets/undangya/kebun-teh/kt-jembatan-bambu.webp" alt="" width="158" style="margin-bottom:8px">
       <div class="story">
         <div class="story-item">
           <svg class="story-dot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M24 42 C24 30 24 20 24 12"/><path d="M24 26 C16 26 10 20 9 11 C18 12 24 17 24 26 Z"/><path d="M24 20 C31 20 37 15 38 7 C30 8 24 12 24 20 Z"/></svg>
-          <p class="story-year rv rv-left">2019 · BABAK PERTAMA</p>
-          <h3 class="story-h rv rv-left d1">Bertemu di Kaki Gunung</h3>
+          <p class="story-year rv rv-left">TERAS BAWAH · 2019</p>
+          <h3 class="story-h rv rv-left d1">Benih Bertemu di Kaki Gunung</h3>
           <p class="story-p rv rv-up d2">Kami bertemu dalam perjalanan karya wisata ke perkebunan teh. Hujan gerimis mempertemukan kami di pondok teh yang sama — satu teko berdua, dan percakapan yang enggan berakhir meski hujan telah reda.</p>
         </div>
         <div class="story-item">
           <svg class="story-dot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M10 34 L38 34 L35 20 L13 20 Z"/><path d="M13 20 C13 13 18 9 24 9 C30 9 35 13 35 20"/></svg>
-          <p class="story-year rv rv-left">2023 · BABAK KEDUA</p>
+          <p class="story-year rv rv-left">TERAS TENGAH · 2023</p>
           <h3 class="story-h rv rv-left d1">Lamaran di Antara Terasering</h3>
           <p class="story-p rv rv-up d2">Empat tahun merawat rasa seperti merawat rumpun teh. Di jalur setapak tempat kami pertama berjalan beriringan, Fahrezzi berlutut di antara kabut pagi dan memetik janji: satu cincin, satu kata — “bersedia”.</p>
         </div>
         <div class="story-item">
           <svg class="story-dot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 36 L18 16 L26 28 L31 21 L42 36 Z"/></svg>
-          <p class="story-year rv rv-left">2025 · BABAK KETIGA</p>
+          <p class="story-year rv rv-left">TERAS ATAS · 2025</p>
           <h3 class="story-h rv rv-left d1">Menyatukan Dua Keluarga</h3>
           <p class="story-p rv rv-up d2">Dua keluarga yang semula asing duduk melingkar dalam satu pondok besar. Teh diseduh bergantian, tawa mengalir, dan dua rumpun keluarga pun menyatu menjadi satu kebun yang rindang.</p>
         </div>
         <div class="story-item">
           <svg class="story-dot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="19" cy="29" r="9"/><circle cx="30" cy="19" r="9"/></svg>
-          <p class="story-year rv rv-left">2027 · BABAK KEEMPAT</p>
-          <h3 class="story-h rv rv-left d1">Hari Bahagia</h3>
+          <p class="story-year rv rv-left">PUNCAK · 2027</p>
+          <h3 class="story-h rv rv-left d1">Hari Bahagia di Puncak</h3>
           <p class="story-p rv rv-up d2">Kini tiba musim petik terbaik dalam hidup kami. Dengan restu keluarga dan doa sahabat, kami menyeduh babak baru — selamanya. Kami nantikan Anda menjadi saksi di hari bahagia ini.</p>
         </div>
       </div>
     </section>
 
     <!-- ================= VIDEO TEASER ================= -->
+    <div class="contour-divider" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="cuplikan">
       <div class="mist m3" style="top:8%"></div>
       <div class="sec-head">
@@ -455,6 +556,7 @@ body:not(.opened){overflow:hidden}
     </section>
 
     <!-- ================= LIVE + TAGAR + GALERI TAMU ================= -->
+    <div class="contour-divider flip" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="live">
       <div class="mist" style="top:16%"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/pakis.webp" alt="" style="right:-30px;bottom:0;width:110px;animation-duration:9s;animation-delay:-4s">
@@ -488,6 +590,7 @@ body:not(.opened){overflow:hidden}
     </section>
 
     <!-- ================= RSVP ================= -->
+    <div class="contour-divider" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="rsvp">
       <div class="mist m2" style="top:8%"></div>
       <div class="sec-head">
@@ -516,6 +619,7 @@ body:not(.opened){overflow:hidden}
     </section>
 
     <!-- ================= BUKU TAMU & QR ================= -->
+    <div class="contour-divider flip" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="bukutamu">
       <div class="mist m3" style="top:22%"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/bunga-liar.webp" alt="" style="right:4px;top:44px;width:70px;animation-duration:7.4s">
@@ -539,6 +643,7 @@ body:not(.opened){overflow:hidden}
     </section>
 
     <!-- ================= AMPLOP & KADO ================= -->
+    <div class="contour-divider" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="amplop">
       <div class="mist" style="top:12%"></div>
       <div class="sec-head">
@@ -571,6 +676,7 @@ body:not(.opened){overflow:hidden}
     </section>
 
     <!-- ================= TURUT MENGUNDANG ================= -->
+    <div class="contour-divider flip" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="turut">
       <div class="sec-head">
         <div class="sec-kicker rv rv-down d1">Turut Mengundang</div>
@@ -587,12 +693,14 @@ body:not(.opened){overflow:hidden}
     </section>
 
     <!-- ================= PENUTUP ================= -->
+    <div class="contour-divider flip" aria-hidden="true"><svg viewBox="0 0 430 44" preserveAspectRatio="none"><path d="M0 30 C70 18 130 36 215 26 C300 16 360 32 430 22 L430 44 L0 44 Z" fill="#5c7350" opacity=".45"/><path class="shimmer" d="M0 36 C80 26 150 42 230 32 C310 22 370 38 430 30" fill="none" stroke="#d7e6c2" stroke-width="2"/><path d="M0 38 C90 30 170 44 250 36 C320 29 380 40 430 34 L430 44 L0 44 Z" fill="#3f6b35" opacity=".55"/></svg></div>
     <section id="penutup" style="text-align:center">
       <div class="fall-field sec-fall" aria-hidden="true"></div>
       <div class="sec-head">
         <div class="sec-kicker rv rv-down d1" style="color:#d7e6c2;background:rgba(20,34,16,.5)">Penutup</div>
         <h2 class="sec-title rv rv-up d2">Sampai Jumpa di Hari Bahagia</h2>
       </div>
+      <img class="terra-strip rv rv-up d1" src="assets/undangya/kebun-teh/kt2-strip-teras.webp" alt="">
       <img class="orn-img rv rv-zoom d1" src="assets/undangya/kebun-teh/kt-terasering-mini.webp" alt="" width="252">
       <p class="rv rv-up" style="font-size:13.5px;line-height:1.9;max-width:320px;margin:0 auto;position:relative;z-index:3">Merupakan suatu kehormatan dan kebahagiaan bagi kami beserta keluarga apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kedua mempelai. Atas kehadiran serta doa yang tulus, kami mengucapkan terima kasih yang sebesar-besarnya.</p>
       <p class="rv rv-up" style="font-size:13px;margin-top:20px;position:relative;z-index:3">Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
