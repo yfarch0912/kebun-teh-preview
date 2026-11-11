@@ -27,9 +27,9 @@ body{background:#101a0e;font-family:Georgia,'Times New Roman',serif;color:var(--
 main{position:relative;z-index:1}
 section{position:relative;padding:64px 22px 56px;overflow:hidden}
 .sec-head{text-align:center;position:relative;z-index:3;margin-bottom:26px}
-.sec-kicker{letter-spacing:.34em;font-size:10.5px;color:var(--tea);font-weight:bold;text-transform:uppercase}
-.sec-title{font-family:'Great Vibes',cursive;font-size:44px;color:var(--tea-deep);margin:6px 0 4px;line-height:1.15}
-.sec-sub{font-size:13px;color:#4c5a41;line-height:1.65;max-width:300px;margin:0 auto}
+.sec-kicker{letter-spacing:.34em;font-size:10.5px;color:#2e5427;font-weight:bold;text-transform:uppercase;background:rgba(247,241,222,.85);display:inline-block;padding:5px 13px 5px 16px;border-radius:999px;box-shadow:0 3px 10px rgba(34,57,31,.12)}
+.sec-title{font-family:'Great Vibes',cursive;font-size:44px;color:var(--tea-deep);margin:8px 0 6px;line-height:1.15;text-shadow:0 1px 0 rgba(255,253,244,.95),0 3px 16px rgba(255,253,244,.9)}
+.sec-sub{font-size:13px;color:#37452c;line-height:1.65;max-width:300px;margin:0 auto;background:rgba(247,241,222,.82);border-radius:14px;padding:7px 14px;box-shadow:0 4px 14px rgba(34,57,31,.10)}
 .sec-icon{width:44px;height:44px;margin:0 auto 8px;display:block;color:var(--tea)}
 /* kartu panel di atas dunia */
 .card{background:linear-gradient(180deg,rgba(255,253,244,.96),rgba(247,241,222,.94));border:1.5px solid rgba(122,90,56,.55);border-radius:16px;padding:24px 20px;box-shadow:0 14px 30px rgba(34,57,31,.22), inset 0 0 0 4px rgba(255,253,244,.6), inset 0 0 0 5.5px rgba(185,141,79,.35);position:relative;z-index:3}
@@ -40,7 +40,7 @@ section{position:relative;padding:64px 22px 56px;overflow:hidden}
 .btn-alt{background:linear-gradient(180deg,#8a683f,var(--wood-d));color:var(--cream)}
 .btn-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
 .btn-row .btn{font-size:10.5px;padding:11px 15px}
-.demo-note{font-size:11px;color:#77816a;line-height:1.6;margin-top:12px;text-align:center;font-style:italic}
+.demo-note{font-size:11px;color:#4e5a43;line-height:1.6;margin-top:12px;text-align:center;font-style:italic}
 .divider{display:block;margin:16px auto}
 /* ---- kabut CSS ---- */
 .mist{position:absolute;left:-30%;width:160%;height:90px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(255,255,255,.75),rgba(255,255,255,0) 65%);filter:blur(6px);pointer-events:none;z-index:2;animation:mistDrift 16s ease-in-out infinite alternate}
@@ -70,11 +70,11 @@ section{position:relative;padding:64px 22px 56px;overflow:hidden}
 @keyframes heroBreath{from{transform:scale(1)}to{transform:scale(1.07)}}
 #cover .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,40,20,.18) 0%,rgba(24,40,20,0) 34%,rgba(24,40,20,.16) 62%,rgba(20,34,16,.78) 100%);z-index:1}
 .cover-content{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;align-items:center;text-align:center;padding:44px 26px 34px;color:var(--cream)}
-.cover-kicker{letter-spacing:.4em;font-size:10.5px;text-transform:uppercase;color:#e9e2c8;text-shadow:0 2px 8px rgba(0,0,0,.5)}
-.cover-title{font-family:'Great Vibes',cursive;font-size:34px;color:#fff8e2;text-shadow:0 3px 14px rgba(0,0,0,.55);margin-top:6px}
+.cover-kicker{letter-spacing:.4em;font-size:10.5px;text-transform:uppercase;color:#fff8e2;text-shadow:0 2px 8px rgba(0,0,0,.65);background:rgba(20,34,16,.52);padding:7px 16px 7px 19px;border-radius:999px;border:1px solid rgba(247,241,222,.35)}
+.cover-title{font-family:'Great Vibes',cursive;font-size:34px;color:#fff8e2;text-shadow:0 2px 4px rgba(0,0,0,.7),0 4px 20px rgba(0,0,0,.6);margin-top:10px;background:rgba(20,34,16,.30);padding:2px 18px 6px;border-radius:999px}
 .cover-names{font-family:'Great Vibes',cursive;font-size:56px;line-height:1.12;color:#fffdf0;text-shadow:0 4px 20px rgba(0,0,0,.6);margin-top:auto}
 .cover-date{letter-spacing:.3em;font-size:12px;margin-top:8px;color:#f2ecd4;text-shadow:0 2px 8px rgba(0,0,0,.55)}
-.cover-guest{margin-top:20px;background:rgba(24,40,20,.55);border:1px solid rgba(247,241,222,.5);border-radius:14px;padding:13px 20px;backdrop-filter:blur(3px);max-width:300px}
+.cover-guest{margin-top:20px;background:rgba(24,40,20,.72);border:1px solid rgba(247,241,222,.5);border-radius:14px;padding:13px 20px;backdrop-filter:blur(3px);max-width:300px}
 .cover-guest p{font-size:11.5px;line-height:1.6;color:#e9e2c8}
 .cover-guest b{display:block;font-size:16px;color:#fffdf0;margin-top:3px}
 #btnOpen{margin-top:16px}
@@ -89,7 +89,7 @@ body:not(.opened){overflow:hidden}
 .cd-row{display:flex;gap:9px;justify-content:center;margin-top:18px}
 .cd-box{background:linear-gradient(180deg,rgba(34,57,31,.92),rgba(34,57,31,.85));color:var(--cream);border:1px solid rgba(185,141,79,.6);border-radius:12px;width:66px;padding:11px 0 8px;text-align:center;box-shadow:0 10px 22px rgba(34,57,31,.3)}
 .cd-box b{display:block;font-size:24px;line-height:1}
-.cd-box span{font-size:9.5px;letter-spacing:.22em;color:var(--sage)}
+.cd-box span{font-size:9.5px;letter-spacing:.22em;color:#d7e6c2}
 .cd-box b.pop{animation:cdPop .45s ease}
 @keyframes cdPop{40%{transform:scale(1.18)}}
 /* mempelai */
@@ -98,18 +98,18 @@ body:not(.opened){overflow:hidden}
 .frame-kayu::after{content:"";position:absolute;inset:7px;border:1px dashed rgba(247,241,222,.55);border-radius:9px;pointer-events:none}
 .frame-kayu img{border-radius:8px}
 .name-big{font-family:'Great Vibes',cursive;font-size:37px;color:var(--tea-deep);text-align:center;line-height:1.2;margin-top:14px}
-.parents{text-align:center;font-size:13px;line-height:1.75;color:#4c5a41}
+.parents{text-align:center;font-size:13px;line-height:1.75;color:#3f4c34}
 .ig-link{display:inline-block;margin-top:8px;color:var(--tea);font-size:12.5px;text-decoration:none;border-bottom:1px dotted var(--tea)}
 .amp{font-family:'Great Vibes',cursive;font-size:44px;color:var(--gold);text-align:center;margin:16px 0 4px}
 /* acara */
 .event-time{font-size:14px;line-height:1.8;text-align:center}
 .event-place{text-align:center;font-size:14.5px;font-weight:bold;color:var(--tea-deep)}
-.event-addr{text-align:center;font-size:12.5px;color:#5a6650;line-height:1.65}
-.denah{border:1.5px dashed rgba(122,90,56,.6);border-radius:12px;padding:14px 16px;background:rgba(255,253,244,.75);font-size:12.5px;line-height:1.75;color:#4c5a41;position:relative;z-index:3}
+.event-addr{text-align:center;font-size:12.5px;color:#44513a;line-height:1.65}
+.denah{border:1.5px dashed rgba(122,90,56,.6);border-radius:12px;padding:14px 16px;background:rgba(255,253,244,.93);font-size:12.5px;line-height:1.75;color:#37452c;position:relative;z-index:3}
 .denah b{color:var(--tea-deep)}
 /* dresscode */
 .chips{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin-top:6px}
-.chip{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:11px;color:#4c5a41;width:64px;text-align:center}
+.chip{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:11px;color:#37452c;font-weight:bold;width:64px;text-align:center}
 .chip i{width:40px;height:40px;border-radius:50%;border:2px solid rgba(122,90,56,.5);display:block;box-shadow:inset 0 0 0 3px rgba(255,253,244,.65)}
 /* kisah */
 .story{position:relative;z-index:3;max-width:320px;margin:0 auto}
@@ -117,12 +117,12 @@ body:not(.opened){overflow:hidden}
 .story-item::before{content:"";position:absolute;left:10px;top:22px;bottom:-2px;width:2px;background:repeating-linear-gradient(180deg,var(--moss) 0 6px,transparent 6px 11px)}
 .story-item:last-child::before{display:none}
 .story-dot{position:absolute;left:0;top:2px;width:22px;height:22px;color:var(--tea)}
-.story-year{font-size:11px;letter-spacing:.26em;color:var(--gold);font-weight:bold}
+.story-year{font-size:11px;letter-spacing:.26em;color:#8a6530;font-weight:bold}
 .story-h{font-family:'Great Vibes',cursive;font-size:27px;color:var(--tea-deep);line-height:1.2}
-.story-p{font-size:13px;line-height:1.75;color:#47543e;margin-top:3px}
+.story-p{font-size:13px;line-height:1.75;color:#36432c;margin-top:3px}
 /* galeri rel */
-.gal-hint{text-align:center;font-size:10.5px;letter-spacing:.3em;color:var(--moss);margin-bottom:12px;position:relative;z-index:3}
-.rail-label{font-size:10.5px;letter-spacing:.26em;color:var(--wood-d);text-align:center;margin:18px 0 10px;position:relative;z-index:3;font-weight:bold}
+.gal-hint{text-align:center;font-size:10.5px;letter-spacing:.3em;color:#2e5427;font-weight:bold;background:rgba(247,241,222,.8);border-radius:999px;padding:6px 10px;max-width:280px;margin-left:auto;margin-right:auto;margin-bottom:12px;position:relative;z-index:3}
+.rail-label{font-size:10.5px;letter-spacing:.26em;color:var(--wood-d);background:rgba(247,241,222,.65);border-radius:999px;padding:5px 10px;max-width:330px;margin-left:auto;margin-right:auto;text-align:center;margin:18px 0 10px;position:relative;z-index:3;font-weight:bold}
 .gal-rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 22px 14px;margin:0 -22px;scrollbar-width:none;position:relative;z-index:3;cursor:grab}
 .gal-rail::-webkit-scrollbar{display:none}
 .gal-rail.dragging{cursor:grabbing;scroll-snap-type:none}
@@ -136,7 +136,7 @@ body:not(.opened){overflow:hidden}
 .frame-teh img{border-radius:8px;width:100%}
 .frame-teh::before{content:"";position:absolute;inset:7px;border:1px dashed rgba(247,241,222,.5);border-radius:8px;pointer-events:none;z-index:2}
 .plain img{border-radius:13px;box-shadow:0 14px 26px rgba(34,57,31,.28)}
-.gal-cap{text-align:center;font-size:12.5px;color:var(--tea-deep);margin-top:9px;font-style:italic}
+.gal-cap{text-align:center;font-size:12.5px;color:var(--tea-deep);margin-top:9px;font-style:italic;background:rgba(247,241,222,.82);border-radius:999px;padding:4px 12px}
 .rail-meta{display:flex;align-items:center;justify-content:center;gap:14px;position:relative;z-index:3}
 .rail-frac{font-size:11.5px;letter-spacing:.18em;color:var(--wood-d);font-weight:bold}
 .rail-dots{display:flex;gap:6px}
@@ -160,7 +160,7 @@ body:not(.opened){overflow:hidden}
 .salin-btn{display:inline-block;margin-top:10px;background:none;border:1.5px solid var(--tea);color:var(--tea);font-family:Georgia,serif;font-size:11px;letter-spacing:.18em;padding:10px 18px;border-radius:999px;cursor:pointer}
 .gt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
 .gt-grid img{width:100%;height:88px;object-fit:cover;border-radius:9px;border:2px solid rgba(122,90,56,.5)}
-.gt-empty{font-size:12px;color:#77816a;margin-top:12px}
+.gt-empty{font-size:12px;color:#4e5a43;margin-top:12px}
 /* form */
 .f-label{display:block;font-size:11px;letter-spacing:.2em;color:var(--tea-deep);font-weight:bold;margin:14px 0 6px;text-align:left}
 .f-in,.f-sel,.f-ta{width:100%;font-family:Georgia,serif;font-size:14px;color:var(--ink);background:rgba(255,255,255,.85);border:1.5px solid rgba(92,115,80,.5);border-radius:10px;padding:11px 13px;outline:none}
@@ -169,7 +169,7 @@ body:not(.opened){overflow:hidden}
 .wall{margin-top:18px;display:flex;flex-direction:column;gap:10px;max-height:340px;overflow-y:auto;padding-right:2px}
 .wish{background:rgba(255,253,244,.92);border-left:3.5px solid var(--moss);border-radius:9px;padding:11px 13px;text-align:left;box-shadow:0 5px 14px rgba(34,57,31,.12)}
 .wish b{font-size:13.5px;color:var(--tea-deep)}
-.wish .att{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-left:7px;font-weight:bold}
+.wish .att{font-size:10px;letter-spacing:.12em;color:#8a6530;margin-left:7px;font-weight:bold}
 .wish p{font-size:12.5px;line-height:1.65;color:#47543e;margin-top:3px;white-space:pre-wrap;word-break:break-word}
 /* QR */
 .qr-box{width:196px;margin:14px auto 6px;padding:13px;background:#fffdf8;border:2px solid var(--wood);border-radius:16px;box-shadow:0 12px 26px rgba(34,57,31,.22)}
@@ -178,17 +178,42 @@ body:not(.opened){overflow:hidden}
 .bank-row{display:flex;align-items:center;gap:13px;text-align:left}
 .bank-badge{flex:0 0 52px;height:52px;border-radius:12px;background:linear-gradient(150deg,var(--tea),var(--tea-deep));color:var(--cream);display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:12px;letter-spacing:.06em}
 .bank-num{font-size:17px;letter-spacing:.08em;font-weight:bold;color:var(--tea-deep)}
-.bank-name{font-size:12px;color:#5a6650}
+.bank-name{font-size:12px;color:#44513a}
 .copy-btn{margin-left:auto;background:var(--tea);color:var(--cream);border:none;font-family:Georgia,serif;font-size:10.5px;letter-spacing:.14em;padding:9px 13px;border-radius:999px;cursor:pointer;flex:0 0 auto}
 /* turut */
-.turut-list{text-align:center;font-size:13.5px;line-height:2.05;color:#47543e;position:relative;z-index:3}
-.foot-note{font-size:11px;color:#cfe0bd;line-height:1.7;text-align:center}
-#penutup{background:linear-gradient(180deg,transparent,rgba(34,57,31,.88) 30%,var(--tea-deep));color:var(--cream)}
+.turut-list{text-align:center;font-size:13.5px;line-height:2.05;color:#37452c;position:relative;z-index:3;background:linear-gradient(180deg,rgba(255,253,244,.95),rgba(247,241,222,.92));border:1.5px solid rgba(122,90,56,.5);border-radius:16px;padding:22px 18px;box-shadow:0 14px 30px rgba(34,57,31,.20)}
+.turut-line{display:block}
+.foot-note{font-size:11px;color:#e6edd6;line-height:1.7;text-align:center}
+#penutup{background:linear-gradient(180deg,rgba(34,57,31,.62),rgba(34,57,31,.93) 26%,var(--tea-deep));color:var(--cream)}
+#penutup .sec-sub{background:rgba(20,34,16,.45);color:#eef3df}
+#penutup .sec-kicker{background:rgba(20,34,16,.5)}
+#penutup p{text-shadow:0 1px 6px rgba(0,0,0,.35)}
 #penutup .sec-title{color:#fff8e2}
 #penutup .sec-sub{color:#d8e2c8}
+/* ---- PASS AMENDEMEN: varian reveal + mikro-animasi + ornamen baru ---- */
+.rv-down{transform:translateY(-26px)} .rv-rotl{transform:rotate(-5deg) translateY(14px)} .rv-rotr{transform:rotate(5deg) translateY(14px)} .rv-rot{transform:rotate(-7deg) scale(.9)} .rv-pop{transform:scale(.78)} .rv-slide-l{transform:translateX(-44px)} .rv-slide-r{transform:translateX(44px)}
+.rv{transition:opacity .95s ease,transform .95s cubic-bezier(.22,.8,.3,1)}
+.d1{transition-delay:.07s}.d2{transition-delay:.15s}.d3{transition-delay:.23s}.d4{transition-delay:.31s}.d5{transition-delay:.39s}.d6{transition-delay:.47s}
+.orn-img{display:block;margin:0 auto 18px;position:relative;z-index:3;filter:drop-shadow(0 8px 14px rgba(34,57,31,.22))}
+.chip i{animation:chipPulse 3.4s ease-in-out infinite alternate}
+.chip:nth-child(2) i{animation-delay:-.9s}.chip:nth-child(3) i{animation-delay:-1.7s}.chip:nth-child(4) i{animation-delay:-2.4s}.chip:nth-child(5) i{animation-delay:-3s}
+@keyframes chipPulse{from{transform:scale(1)}to{transform:scale(1.14)}}
+.wish{animation:wishIn .65s cubic-bezier(.22,.8,.3,1) both}
+@keyframes wishIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+.gt-grid img{animation:wishIn .6s ease both}
+.cov-a{animation:covIn 1s cubic-bezier(.22,.8,.3,1) both}
+@keyframes covIn{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:none}}
+.sec-icon{filter:drop-shadow(0 2px 6px rgba(247,241,222,.85))}
+.btn{will-change:transform}
+.gal-num{box-shadow:0 5px 12px rgba(0,0,0,.3)}
+.rail-dots i{transition:all .35s cubic-bezier(.22,.8,.3,1)}
+.qr-box{animation:qrGlow 4.5s ease-in-out infinite alternate}
+@keyframes qrGlow{from{box-shadow:0 12px 26px rgba(34,57,31,.22)}to{box-shadow:0 12px 32px rgba(63,107,53,.42)}}
+.live-badge{box-shadow:0 6px 16px rgba(124,45,30,.35)}
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:.001s !important;animation-iteration-count:1 !important;transition-duration:.001s !important}
-  .rv{opacity:1;transform:none}
+  .rv,.rv-down,.rv-rotl,.rv-rotr,.rv-rot,.rv-pop,.rv-slide-l,.rv-slide-r{opacity:1 !important;transform:none !important}
+  .cov-a{opacity:1 !important}
   html{scroll-behavior:auto}
 }
 </style>
@@ -212,16 +237,16 @@ body:not(.opened){overflow:hidden}
     <div class="cover-content">
       <div>
         <svg class="sec-icon" viewBox="0 0 48 48" fill="none" stroke="#f7f1de" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="color:#f7f1de"><path d="M24 42 C24 30 24 20 24 12"/><path d="M24 26 C16 26 10 20 9 11 C18 12 24 17 24 26 Z" fill="rgba(169,189,147,.35)"/><path d="M24 20 C31 20 37 15 38 7 C30 8 24 12 24 20 Z" fill="rgba(169,189,147,.35)"/><path d="M24 12 C21 8 21 4 24 2 C27 4 27 8 24 12 Z" fill="rgba(247,241,222,.4)"/></svg>
-        <p class="cover-kicker">Undangan Pernikahan</p>
-        <p class="cover-title">Kebun Teh Pegunungan</p>
+        <p class="cover-kicker cov-a" style="animation-delay:.25s">Undangan Pernikahan</p>
+        <p class="cover-title cov-a" style="animation-delay:.45s">Kebun Teh Pegunungan</p>
       </div>
-      <h1 class="cover-names">Meyzsa<br>&amp;<br>Fahrezzi</h1>
-      <p class="cover-date">SABTU · 12 JUNI 2027</p>
-      <div class="cover-guest">
+      <h1 class="cover-names cov-a" style="animation-delay:.7s">Meyzsa<br>&amp;<br>Fahrezzi</h1>
+      <p class="cover-date cov-a" style="animation-delay:.95s">SABTU · 12 JUNI 2027</p>
+      <div class="cover-guest cov-a" style="animation-delay:1.15s">
         <p>Kepada Yth.<br>Bapak/Ibu/Saudara/i</p>
         <b id="guestName">Tamu Undangan</b>
       </div>
-      <button class="btn" id="btnOpen" type="button">✉&nbsp; BUKA UNDANGAN</button>
+      <button class="btn cov-a" id="btnOpen" type="button" style="animation-delay:1.35s">✉&nbsp; BUKA UNDANGAN</button>
     </div>
   </div>
 </div>
@@ -238,25 +263,26 @@ body:not(.opened){overflow:hidden}
       <div class="fall-field sec-fall" aria-hidden="true"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/pakis.webp" alt="" style="left:-30px;bottom:0;width:120px;animation-duration:8.5s">
       <img class="sprite tegak" src="assets/undangya/kebun-teh/pucuk-teh.webp" alt="" style="right:6px;top:36px;width:64px;animation-duration:7s;animation-delay:-2s">
-      <div class="sec-head rv rv-up">
-        <svg class="sec-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M24 42 C24 30 24 20 24 12"/><path d="M24 26 C16 26 10 20 9 11 C18 12 24 17 24 26 Z"/><path d="M24 20 C31 20 37 15 38 7 C30 8 24 12 24 20 Z"/><path d="M24 12 C21 8 21 4 24 2 C27 4 27 8 24 12 Z"/></svg>
-        <div class="sec-kicker">Pembuka</div>
-        <h2 class="sec-title">Assalamu’alaikum</h2>
-        <p class="sec-sub">Warahmatullahi Wabarakatuh</p>
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-rot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M24 42 C24 30 24 20 24 12"/><path d="M24 26 C16 26 10 20 9 11 C18 12 24 17 24 26 Z"/><path d="M24 20 C31 20 37 15 38 7 C30 8 24 12 24 20 Z"/><path d="M24 12 C21 8 21 4 24 2 C27 4 27 8 24 12 Z"/></svg>
+        <div class="sec-kicker rv rv-down d1">Pembuka</div>
+        <h2 class="sec-title rv rv-up d2">Assalamu’alaikum</h2>
+        <p class="sec-sub rv rv-up d3">Warahmatullahi Wabarakatuh</p>
       </div>
+      <img class="orn-img rv rv-zoom d2" src="assets/undangya/kebun-teh/kt-teko-uap.webp" alt="" width="104">
       <div class="card rv rv-up" style="text-align:center">
         <p style="font-size:14.5px;line-height:1.9;font-style:italic">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.”</p>
-        <p style="font-size:11.5px;letter-spacing:.2em;color:var(--gold);margin-top:10px;font-weight:bold">QS. AR-RUM : 21</p>
-        <svg class="divider" viewBox="0 0 120 12" aria-hidden="true" style="width:120px"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
+        <p style="font-size:11.5px;letter-spacing:.2em;color:#8a6530;margin-top:10px;font-weight:bold">QS. AR-RUM : 21</p>
+        <svg class="divider rv rv-zoom d2" viewBox="0 0 120 12" aria-hidden="true" style="width:120px"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
         <p style="font-size:13.5px;line-height:1.85">Dengan memohon rahmat dan rida Allah SWT, kami bermaksud menyempurnakan separuh agama dalam ikatan pernikahan — seperti pucuk teh yang dipetik di pagi berkabut, kami memetik hari terbaik kami. Kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu.</p>
       </div>
       <div class="rv rv-zoom" style="position:relative;z-index:3">
-        <p style="text-align:center;font-size:11px;letter-spacing:.3em;color:var(--tea);font-weight:bold;margin-top:30px">MENGHITUNG HARI BAHAGIA</p>
+        <p class="rv rv-down" style="text-align:center;font-size:11px;letter-spacing:.3em;color:#2e5427;font-weight:bold;margin-top:30px;background:rgba(247,241,222,.8);border-radius:999px;padding:6px 10px">MENGHITUNG HARI BAHAGIA</p>
         <div class="cd-row">
-          <div class="cd-box"><b id="cdD">0</b><span>HARI</span></div>
-          <div class="cd-box"><b id="cdH">00</b><span>JAM</span></div>
-          <div class="cd-box"><b id="cdM">00</b><span>MENIT</span></div>
-          <div class="cd-box"><b id="cdS">00</b><span>DETIK</span></div>
+          <div class="cd-box rv rv-pop d1"><b id="cdD">0</b><span>HARI</span></div>
+          <div class="cd-box rv rv-pop d2"><b id="cdH">00</b><span>JAM</span></div>
+          <div class="cd-box rv rv-pop d3"><b id="cdM">00</b><span>MENIT</span></div>
+          <div class="cd-box rv rv-pop d4"><b id="cdS">00</b><span>DETIK</span></div>
         </div>
       </div>
     </section>
@@ -266,24 +292,25 @@ body:not(.opened){overflow:hidden}
       <div class="mist m2" style="top:20%"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/bambu.webp" alt="" style="right:-36px;top:60px;width:110px;animation-duration:9.5s">
       <img class="sprite tegak" src="assets/undangya/kebun-teh/bunga-liar.webp" alt="" style="left:2px;bottom:20px;width:80px;animation-duration:7.6s;animation-delay:-4s">
-      <div class="sec-head rv rv-up">
-        <svg class="sec-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 34 L38 34 L35 20 L13 20 Z"/><path d="M13 20 C13 13 18 9 24 9 C30 9 35 13 35 20"/><path d="M8 38 H40"/><path d="M24 9 C24 6 25 4 27 3" /><circle cx="28.5" cy="2.5" r="1.4" fill="currentColor"/></svg>
-        <div class="sec-kicker">Mempelai</div>
-        <h2 class="sec-title">Dua Pucuk, Satu Rumpun</h2>
-        <p class="sec-sub">Dengan segala kerendahan hati, kami memperkenalkan kedua mempelai</p>
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-rot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 34 L38 34 L35 20 L13 20 Z"/><path d="M13 20 C13 13 18 9 24 9 C30 9 35 13 35 20"/><path d="M8 38 H40"/><path d="M24 9 C24 6 25 4 27 3" /><circle cx="28.5" cy="2.5" r="1.4" fill="currentColor"/></svg>
+        <div class="sec-kicker rv rv-down d1">Mempelai</div>
+        <h2 class="sec-title rv rv-up d2">Dua Pucuk, Satu Rumpun</h2>
+        <p class="sec-sub rv rv-up d3">Dengan segala kerendahan hati, kami memperkenalkan kedua mempelai</p>
       </div>
+      <img class="orn-img rv rv-rotr d2" src="assets/undangya/kebun-teh/kt-daun-cincin.webp" alt="" width="110">
       <div class="card rv rv-left" style="text-align:center">
-        <div class="frame-kayu" style="display:inline-block"><img class="couple-photo" src="assets/undangya/kebun-teh/bride.webp" alt="Mempelai wanita Meyzsa Putri Ananda berbusana gaun krem-sage dan hijab krem di kebun teh"></div>
-        <h3 class="name-big">Meyzsa Putri Ananda, S.Pd.</h3>
-        <p class="parents">Putri dari<br><b>Bapak H. Muhammad Ridwan</b><br>&amp; <b>Ibu Hj. Siti Aminah</b></p>
-        <a class="ig-link" href="https://instagram.com/meyzsa.contoh" target="_blank" rel="noopener">@meyzsa.contoh</a>
+        <div class="frame-kayu rv rv-zoom d1" style="display:inline-block"><img class="couple-photo" src="assets/undangya/kebun-teh/bride.webp" alt="Mempelai wanita Meyzsa Putri Ananda berbusana gaun krem-sage dan hijab krem di kebun teh"></div>
+        <h3 class="name-big rv rv-up d1">Meyzsa Putri Ananda, S.Pd.</h3>
+        <p class="parents rv rv-up d2">Putri dari<br><b>Bapak H. Muhammad Ridwan</b><br>&amp; <b>Ibu Hj. Siti Aminah</b></p>
+        <a class="ig-link rv rv-pop d3" href="https://instagram.com/meyzsa.contoh" target="_blank" rel="noopener">@meyzsa.contoh</a>
       </div>
       <div class="amp rv rv-zoom">&amp;</div>
       <div class="card rv rv-right" style="text-align:center">
-        <div class="frame-kayu" style="display:inline-block"><img class="couple-photo" src="assets/undangya/kebun-teh/groom.webp" alt="Mempelai pria Ahmad Fahrezzi Pratama berjas hijau lumut di kebun teh"></div>
-        <h3 class="name-big">Ahmad Fahrezzi Pratama, S.T.</h3>
-        <p class="parents">Putra dari<br><b>Bapak H. Bambang Sutrisno</b><br>&amp; <b>Ibu Hj. Ratna Dewi</b></p>
-        <a class="ig-link" href="https://instagram.com/fahrezzi.contoh" target="_blank" rel="noopener">@fahrezzi.contoh</a>
+        <div class="frame-kayu rv rv-zoom d1" style="display:inline-block"><img class="couple-photo" src="assets/undangya/kebun-teh/groom.webp" alt="Mempelai pria Ahmad Fahrezzi Pratama berjas hijau lumut di kebun teh"></div>
+        <h3 class="name-big rv rv-up d1">Ahmad Fahrezzi Pratama, S.T.</h3>
+        <p class="parents rv rv-up d2">Putra dari<br><b>Bapak H. Bambang Sutrisno</b><br>&amp; <b>Ibu Hj. Ratna Dewi</b></p>
+        <a class="ig-link rv rv-pop d3" href="https://instagram.com/fahrezzi.contoh" target="_blank" rel="noopener">@fahrezzi.contoh</a>
       </div>
     </section>
 
@@ -292,115 +319,118 @@ body:not(.opened){overflow:hidden}
       <div class="mist m3" style="top:10%"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/pinus.webp" alt="" style="left:-16px;top:120px;width:84px;animation-duration:8.8s">
       <img class="sprite gantung" src="assets/undangya/kebun-teh/lentera.webp" alt="" style="right:14px;top:-4px;width:40px;animation-duration:8s;animation-delay:-3s">
-      <div class="sec-head rv rv-up">
-        <svg class="sec-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 36 L18 16 L26 28 L31 21 L42 36 Z"/><circle cx="36" cy="10" r="3.4"/></svg>
-        <div class="sec-kicker">Acara</div>
-        <h2 class="sec-title">Waktu &amp; Tempat</h2>
-        <p class="sec-sub">Sabtu, 12 Juni 2027 — kami nantikan kehadiran Anda</p>
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-rot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 36 L18 16 L26 28 L31 21 L42 36 Z"/><circle cx="36" cy="10" r="3.4"/></svg>
+        <div class="sec-kicker rv rv-down d1">Acara</div>
+        <h2 class="sec-title rv rv-up d2">Waktu &amp; Tempat</h2>
+        <p class="sec-sub rv rv-up d3">Sabtu, 12 Juni 2027 — kami nantikan kehadiran Anda</p>
       </div>
+      <img class="orn-img rv rv-up d2" src="assets/undangya/kebun-teh/kt-gunung-matahari.webp" alt="" width="138">
       <div class="card rv rv-up">
-        <h3 class="sub-h">Akad Nikah</h3>
-        <p class="event-time"><b>Sabtu, 12 Juni 2027</b><br>Pukul 08.00 – 10.00 WIB</p>
-        <svg class="divider" viewBox="0 0 120 12" aria-hidden="true" style="width:120px"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
-        <p class="event-place">Masjid Agung Al-Azhar</p>
-        <p class="event-addr">Jl. Sisingamangaraja, Kebayoran Baru,<br>Jakarta Selatan</p>
+        <h3 class="sub-h rv rv-down">Akad Nikah</h3>
+        <p class="event-time rv rv-up d1"><b>Sabtu, 12 Juni 2027</b><br>Pukul 08.00 – 10.00 WIB</p>
+        <svg class="divider rv rv-zoom d2" viewBox="0 0 120 12" aria-hidden="true" style="width:120px"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
+        <p class="event-place rv rv-up d2">Masjid Agung Al-Azhar</p>
+        <p class="event-addr rv rv-up d3">Jl. Sisingamangaraja, Kebayoran Baru,<br>Jakarta Selatan</p>
         <div class="btn-row">
-          <a class="btn" href="https://maps.google.com/?q=Masjid+Agung+Al-Azhar+Jakarta+Selatan" target="_blank" rel="noopener">BUKA PETA</a>
-          <a class="btn btn-alt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Akad+Nikah+Meyzsa+%26+Fahrezzi&amp;dates=20270612T010000Z%2F20270612T030000Z&amp;details=Akad+Nikah+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=Masjid+Agung+Al-Azhar%2C+Kebayoran+Baru%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KALENDER</a>
-          <button class="btn btn-alt" type="button" data-ics data-file="akad-meyzsa-fahrezzi" data-title="Akad Nikah Meyzsa &amp; Fahrezzi" data-start="20270612T010000Z" data-end="20270612T030000Z" data-loc="Masjid Agung Al-Azhar, Kebayoran Baru, Jakarta Selatan" data-desc="Akad Nikah Meyzsa Putri Ananda &amp; Ahmad Fahrezzi Pratama">UNDUH .ICS</button>
+          <a class="btn rv rv-up d2" href="https://maps.google.com/?q=Masjid+Agung+Al-Azhar+Jakarta+Selatan" target="_blank" rel="noopener">BUKA PETA</a>
+          <a class="btn btn-alt rv rv-up d3" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Akad+Nikah+Meyzsa+%26+Fahrezzi&amp;dates=20270612T010000Z%2F20270612T030000Z&amp;details=Akad+Nikah+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=Masjid+Agung+Al-Azhar%2C+Kebayoran+Baru%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KALENDER</a>
+          <button class="btn btn-alt rv rv-up d3" type="button" data-ics data-file="akad-meyzsa-fahrezzi" data-title="Akad Nikah Meyzsa &amp; Fahrezzi" data-start="20270612T010000Z" data-end="20270612T030000Z" data-loc="Masjid Agung Al-Azhar, Kebayoran Baru, Jakarta Selatan" data-desc="Akad Nikah Meyzsa Putri Ananda &amp; Ahmad Fahrezzi Pratama">UNDUH .ICS</button>
         </div>
       </div>
       <div class="card rv rv-up">
-        <h3 class="sub-h">Resepsi</h3>
-        <p class="event-time"><b>Sabtu, 12 Juni 2027</b><br>Pukul 11.00 – 13.00 WIB</p>
-        <svg class="divider" viewBox="0 0 120 12" aria-hidden="true" style="width:120px"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
-        <p class="event-place">The Ritz-Carlton Jakarta, Pacific Place</p>
-        <p class="event-addr">Jl. Jend. Sudirman Kav. 52–53,<br>Jakarta Selatan</p>
+        <h3 class="sub-h rv rv-down">Resepsi</h3>
+        <p class="event-time rv rv-up d1"><b>Sabtu, 12 Juni 2027</b><br>Pukul 11.00 – 13.00 WIB</p>
+        <svg class="divider rv rv-zoom d2" viewBox="0 0 120 12" aria-hidden="true" style="width:120px"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
+        <p class="event-place rv rv-up d2">The Ritz-Carlton Jakarta, Pacific Place</p>
+        <p class="event-addr rv rv-up d3">Jl. Jend. Sudirman Kav. 52–53,<br>Jakarta Selatan</p>
         <div class="btn-row">
-          <a class="btn" href="https://maps.google.com/?q=The+Ritz-Carlton+Jakarta+Pacific+Place" target="_blank" rel="noopener">BUKA PETA</a>
-          <a class="btn btn-alt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Resepsi+Meyzsa+%26+Fahrezzi&amp;dates=20270612T040000Z%2F20270612T060000Z&amp;details=Resepsi+Pernikahan+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=The+Ritz-Carlton+Jakarta%2C+Pacific+Place%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KALENDER</a>
-          <button class="btn btn-alt" type="button" data-ics data-file="resepsi-meyzsa-fahrezzi" data-title="Resepsi Meyzsa &amp; Fahrezzi" data-start="20270612T040000Z" data-end="20270612T060000Z" data-loc="The Ritz-Carlton Jakarta, Pacific Place, Jakarta Selatan" data-desc="Resepsi Pernikahan Meyzsa Putri Ananda &amp; Ahmad Fahrezzi Pratama">UNDUH .ICS</button>
+          <a class="btn rv rv-up d2" href="https://maps.google.com/?q=The+Ritz-Carlton+Jakarta+Pacific+Place" target="_blank" rel="noopener">BUKA PETA</a>
+          <a class="btn btn-alt rv rv-up d3" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Resepsi+Meyzsa+%26+Fahrezzi&amp;dates=20270612T040000Z%2F20270612T060000Z&amp;details=Resepsi+Pernikahan+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=The+Ritz-Carlton+Jakarta%2C+Pacific+Place%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KALENDER</a>
+          <button class="btn btn-alt rv rv-up d3" type="button" data-ics data-file="resepsi-meyzsa-fahrezzi" data-title="Resepsi Meyzsa &amp; Fahrezzi" data-start="20270612T040000Z" data-end="20270612T060000Z" data-loc="The Ritz-Carlton Jakarta, Pacific Place, Jakarta Selatan" data-desc="Resepsi Pernikahan Meyzsa Putri Ananda &amp; Ahmad Fahrezzi Pratama">UNDUH .ICS</button>
         </div>
       </div>
       <div class="denah rv rv-up" style="margin-top:16px">
         <b>Denah &amp; Info Lokasi.</b> Akad berlangsung di Masjid Agung Al-Azhar (akses terdekat: Stasiun MRT Blok M / ASEAN, lanjutkan ±5 menit berkendara). Resepsi di The Ritz-Carlton Jakarta, Pacific Place (akses: Stasiun MRT Istora Mandiri, pintu masuk lobi utama lantai dasar). Parkir tersedia di basement kedua gedung; petugas kami berjaga di meja registrasi mulai 30 menit sebelum acara.
       </div>
       <div class="card rv rv-up" style="margin-top:16px;text-align:center">
-        <h3 class="sub-h" style="font-size:26px">Dresscode</h3>
+        <h3 class="sub-h rv rv-down" style="font-size:26px">Dresscode</h3>
         <p style="font-size:12.5px;color:#5a6650;line-height:1.7">Busana bernuansa kebun teh — segar, sopan, dan nyaman:</p>
         <div class="chips">
-          <span class="chip"><i style="background:#3f6b35"></i>Hijau Teh</span>
-          <span class="chip"><i style="background:#5c7350"></i>Hijau Lumut</span>
-          <span class="chip"><i style="background:#a9bd93"></i>Sage</span>
-          <span class="chip"><i style="background:#f7f1de"></i>Krem Gading</span>
-          <span class="chip"><i style="background:#7a5a38"></i>Cokelat Kayu</span>
+          <span class="chip rv rv-pop d1"><i style="background:#3f6b35"></i>Hijau Teh</span>
+          <span class="chip rv rv-pop d2"><i style="background:#5c7350"></i>Hijau Lumut</span>
+          <span class="chip rv rv-pop d3"><i style="background:#a9bd93"></i>Sage</span>
+          <span class="chip rv rv-pop d4"><i style="background:#f7f1de"></i>Krem Gading</span>
+          <span class="chip rv rv-pop d5"><i style="background:#7a5a38"></i>Cokelat Kayu</span>
         </div>
-        <p class="demo-note">Mohon berkenan tidak mengenakan gaun putih polos menyerupai mempelai wanita.</p>
+        <p class="demo-note rv rv-up d3">Mohon berkenan tidak mengenakan gaun putih polos menyerupai mempelai wanita.</p>
       </div>
     </section>
 
     <!-- ================= GALERI ================= -->
     <section id="galeri">
       <div class="mist" style="top:4%"></div>
-      <div class="sec-head rv rv-up">
-        <svg class="sec-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8 H34 L36 16 H12 Z"/><path d="M12 16 C10 26 13 36 18 40"/><path d="M36 16 C38 26 35 36 30 40"/><path d="M18 40 H30"/><path d="M17 24 C20 21 24 21 27 24" stroke-dasharray="3 3"/></svg>
-        <div class="sec-kicker">Galeri</div>
-        <h2 class="sec-title">Petikan Kisah Kami</h2>
-        <p class="sec-sub">Delapan potret di kebun teh — ketuk untuk memperbesar</p>
+      <img class="sprite tegak" src="assets/undangya/kebun-teh/kt-keranjang-petik.webp" alt="" style="right:-14px;bottom:6px;width:92px;animation-duration:8.6s">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-rot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8 H34 L36 16 H12 Z"/><path d="M12 16 C10 26 13 36 18 40"/><path d="M36 16 C38 26 35 36 30 40"/><path d="M18 40 H30"/><path d="M17 24 C20 21 24 21 27 24" stroke-dasharray="3 3"/></svg>
+        <div class="sec-kicker rv rv-down d1">Galeri</div>
+        <h2 class="sec-title rv rv-up d2">Petikan Kisah Kami</h2>
+        <p class="sec-sub rv rv-up d3">Delapan potret di kebun teh — ketuk untuk memperbesar</p>
       </div>
-      <div class="gal-hint">— GESER KANAN · KIRI —</div>
-      <div class="rail-label">POTRET BERFRAME KAYU &amp; TALI RAMI</div>
+      <div class="gal-hint rv rv-down">— GESER KANAN · KIRI —</div>
+      <div class="rail-label rv rv-up d1">POTRET BERFRAME KAYU &amp; TALI RAMI</div>
       <div class="gal-rail" id="railMain">
-        <div class="gal-slide rv rv-up"><span class="gal-num">01 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-1.webp" alt="Pasangan bergandengan di jalur setapak kebun teh terasering" loading="lazy"></div><figcaption class="gal-cap">Jalur Setapak Kebun Teh</figcaption></figure></div>
-        <div class="gal-slide rv rv-up"><span class="gal-num">02 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-2.webp" alt="Pasangan menikmati teh di pondok teh kayu" loading="lazy"></div><figcaption class="gal-cap">Pondok Teh</figcaption></figure></div>
-        <div class="gal-slide rv rv-up"><span class="gal-num">04 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-4.webp" alt="Pasangan di jembatan bambu di atas sungai kecil" loading="lazy"></div><figcaption class="gal-cap">Jembatan Bambu</figcaption></figure></div>
-        <div class="gal-slide rv rv-up"><span class="gal-num">07 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-7.webp" alt="Pasangan di depan pabrik teh tua" loading="lazy"></div><figcaption class="gal-cap">Pabrik Teh Tua</figcaption></figure></div>
+        <div class="gal-slide rv rv-up"><span class="gal-num rv rv-pop d2">01 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-1.webp" alt="Pasangan bergandengan di jalur setapak kebun teh terasering" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Jalur Setapak Kebun Teh</figcaption></figure></div>
+        <div class="gal-slide rv rv-up"><span class="gal-num rv rv-pop d2">02 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-2.webp" alt="Pasangan menikmati teh di pondok teh kayu" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Pondok Teh</figcaption></figure></div>
+        <div class="gal-slide rv rv-up"><span class="gal-num rv rv-pop d2">04 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-4.webp" alt="Pasangan di jembatan bambu di atas sungai kecil" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Jembatan Bambu</figcaption></figure></div>
+        <div class="gal-slide rv rv-up"><span class="gal-num rv rv-pop d2">07 / 08</span><figure><div class="frame-teh"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-7.webp" alt="Pasangan di depan pabrik teh tua" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Pabrik Teh Tua</figcaption></figure></div>
       </div>
-      <div class="rail-meta"><span class="rail-frac" id="fracMain">1 / 4</span><span class="rail-dots" id="dotsMain"></span></div>
-      <div class="rail-label">POTRET LEPAS · TANPA FRAME</div>
+      <div class="rail-meta rv rv-up d2"><span class="rail-frac rv rv-pop d1" id="fracMain">1 / 4</span><span class="rail-dots" id="dotsMain"></span></div>
+      <div class="rail-label rv rv-up d1">POTRET LEPAS · TANPA FRAME</div>
       <div class="gal-rail" id="railSub">
-        <div class="gal-slide small rv rv-up"><span class="gal-num">03 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-3.webp" alt="Pasangan piknik di kebun teh dengan keranjang anyaman" loading="lazy"></div><figcaption class="gal-cap">Piknik di Kebun</figcaption></figure></div>
-        <div class="gal-slide small rv rv-up"><span class="gal-num">05 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-5.webp" alt="Pasangan di tengah terasering berkabut pagi" loading="lazy"></div><figcaption class="gal-cap">Kabut Pagi di Terasering</figcaption></figure></div>
-        <div class="gal-slide small rv rv-up"><span class="gal-num">06 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-6.webp" alt="Pasangan memandang senja pegunungan dari bukit kebun teh" loading="lazy"></div><figcaption class="gal-cap">Senja Pegunungan</figcaption></figure></div>
-        <div class="gal-slide small rv rv-up"><span class="gal-num">08 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-8.webp" alt="Pasangan di tepi danau pegunungan yang berkabut" loading="lazy"></div><figcaption class="gal-cap">Tepi Danau Pegunungan</figcaption></figure></div>
+        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">03 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-3.webp" alt="Pasangan piknik di kebun teh dengan keranjang anyaman" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Piknik di Kebun</figcaption></figure></div>
+        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">05 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-5.webp" alt="Pasangan di tengah terasering berkabut pagi" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Kabut Pagi di Terasering</figcaption></figure></div>
+        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">06 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-6.webp" alt="Pasangan memandang senja pegunungan dari bukit kebun teh" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Senja Pegunungan</figcaption></figure></div>
+        <div class="gal-slide small rv rv-up"><span class="gal-num rv rv-pop d2">08 / 08</span><figure><div class="plain"><img class="gal-photo" src="assets/undangya/kebun-teh/galeri-8.webp" alt="Pasangan di tepi danau pegunungan yang berkabut" loading="lazy"></div><figcaption class="gal-cap rv rv-up d1">Tepi Danau Pegunungan</figcaption></figure></div>
       </div>
-      <div class="rail-meta"><span class="rail-frac" id="fracSub">1 / 4</span><span class="rail-dots" id="dotsSub"></span></div>
+      <div class="rail-meta rv rv-up d2"><span class="rail-frac rv rv-pop d1" id="fracSub">1 / 4</span><span class="rail-dots" id="dotsSub"></span></div>
     </section>
 
     <!-- ================= KISAH CINTA ================= -->
     <section id="kisah">
       <div class="mist m2" style="top:14%"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/rumpun-teh.webp" alt="" style="right:-28px;bottom:6px;width:120px;animation-duration:8.2s;animation-delay:-2s">
-      <div class="sec-head rv rv-up">
-        <svg class="sec-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 30 C12 30 16 22 24 22 C32 22 36 30 44 30"/><path d="M14 30 V38 M34 30 V38"/><path d="M10 38 H18 M30 38 H38"/><path d="M24 22 V14"/><path d="M18 14 H30"/></svg>
-        <div class="sec-kicker">Love Story</div>
-        <h2 class="sec-title">Kisah Kami</h2>
-        <p class="sec-sub">Empat babak, seperti empat musim di kebun teh</p>
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-rot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 30 C12 30 16 22 24 22 C32 22 36 30 44 30"/><path d="M14 30 V38 M34 30 V38"/><path d="M10 38 H18 M30 38 H38"/><path d="M24 22 V14"/><path d="M18 14 H30"/></svg>
+        <div class="sec-kicker rv rv-down d1">Love Story</div>
+        <h2 class="sec-title rv rv-up d2">Kisah Kami</h2>
+        <p class="sec-sub rv rv-up d3">Empat babak, seperti empat musim di kebun teh</p>
       </div>
+      <img class="orn-img rv rv-up d2" src="assets/undangya/kebun-teh/kt-jembatan-bambu.webp" alt="" width="158" style="margin-bottom:8px">
       <div class="story">
-        <div class="story-item rv rv-left">
+        <div class="story-item">
           <svg class="story-dot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M24 42 C24 30 24 20 24 12"/><path d="M24 26 C16 26 10 20 9 11 C18 12 24 17 24 26 Z"/><path d="M24 20 C31 20 37 15 38 7 C30 8 24 12 24 20 Z"/></svg>
-          <p class="story-year">2019 · BABAK PERTAMA</p>
-          <h3 class="story-h">Bertemu di Kaki Gunung</h3>
-          <p class="story-p">Kami bertemu dalam perjalanan karya wisata ke perkebunan teh. Hujan gerimis mempertemukan kami di pondok teh yang sama — satu teko berdua, dan percakapan yang enggan berakhir meski hujan telah reda.</p>
+          <p class="story-year rv rv-left">2019 · BABAK PERTAMA</p>
+          <h3 class="story-h rv rv-left d1">Bertemu di Kaki Gunung</h3>
+          <p class="story-p rv rv-up d2">Kami bertemu dalam perjalanan karya wisata ke perkebunan teh. Hujan gerimis mempertemukan kami di pondok teh yang sama — satu teko berdua, dan percakapan yang enggan berakhir meski hujan telah reda.</p>
         </div>
-        <div class="story-item rv rv-left">
+        <div class="story-item">
           <svg class="story-dot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M10 34 L38 34 L35 20 L13 20 Z"/><path d="M13 20 C13 13 18 9 24 9 C30 9 35 13 35 20"/></svg>
-          <p class="story-year">2023 · BABAK KEDUA</p>
-          <h3 class="story-h">Lamaran di Antara Terasering</h3>
-          <p class="story-p">Empat tahun merawat rasa seperti merawat rumpun teh. Di jalur setapak tempat kami pertama berjalan beriringan, Fahrezzi berlutut di antara kabut pagi dan memetik janji: satu cincin, satu kata — “bersedia”.</p>
+          <p class="story-year rv rv-left">2023 · BABAK KEDUA</p>
+          <h3 class="story-h rv rv-left d1">Lamaran di Antara Terasering</h3>
+          <p class="story-p rv rv-up d2">Empat tahun merawat rasa seperti merawat rumpun teh. Di jalur setapak tempat kami pertama berjalan beriringan, Fahrezzi berlutut di antara kabut pagi dan memetik janji: satu cincin, satu kata — “bersedia”.</p>
         </div>
-        <div class="story-item rv rv-left">
+        <div class="story-item">
           <svg class="story-dot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 36 L18 16 L26 28 L31 21 L42 36 Z"/></svg>
-          <p class="story-year">2025 · BABAK KETIGA</p>
-          <h3 class="story-h">Menyatukan Dua Keluarga</h3>
-          <p class="story-p">Dua keluarga yang semula asing duduk melingkar dalam satu pondok besar. Teh diseduh bergantian, tawa mengalir, dan dua rumpun keluarga pun menyatu menjadi satu kebun yang rindang.</p>
+          <p class="story-year rv rv-left">2025 · BABAK KETIGA</p>
+          <h3 class="story-h rv rv-left d1">Menyatukan Dua Keluarga</h3>
+          <p class="story-p rv rv-up d2">Dua keluarga yang semula asing duduk melingkar dalam satu pondok besar. Teh diseduh bergantian, tawa mengalir, dan dua rumpun keluarga pun menyatu menjadi satu kebun yang rindang.</p>
         </div>
-        <div class="story-item rv rv-left">
+        <div class="story-item">
           <svg class="story-dot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="19" cy="29" r="9"/><circle cx="30" cy="19" r="9"/></svg>
-          <p class="story-year">2027 · BABAK KEEMPAT</p>
-          <h3 class="story-h">Hari Bahagia</h3>
-          <p class="story-p">Kini tiba musim petik terbaik dalam hidup kami. Dengan restu keluarga dan doa sahabat, kami menyeduh babak baru — selamanya. Kami nantikan Anda menjadi saksi di hari bahagia ini.</p>
+          <p class="story-year rv rv-left">2027 · BABAK KEEMPAT</p>
+          <h3 class="story-h rv rv-left d1">Hari Bahagia</h3>
+          <p class="story-p rv rv-up d2">Kini tiba musim petik terbaik dalam hidup kami. Dengan restu keluarga dan doa sahabat, kami menyeduh babak baru — selamanya. Kami nantikan Anda menjadi saksi di hari bahagia ini.</p>
         </div>
       </div>
     </section>
@@ -408,12 +438,13 @@ body:not(.opened){overflow:hidden}
     <!-- ================= VIDEO TEASER ================= -->
     <section id="cuplikan">
       <div class="mist m3" style="top:8%"></div>
-      <div class="sec-head rv rv-up">
-        <svg class="sec-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="12" width="36" height="25" rx="4"/><path d="M20 19 L31 24.5 L20 30 Z" fill="currentColor" stroke="none"/></svg>
-        <div class="sec-kicker">Cuplikan</div>
-        <h2 class="sec-title">Seduhan Pertama</h2>
-        <p class="sec-sub">Sepotong kisah kami dalam bingkai bergerak</p>
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-rot" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="12" width="36" height="25" rx="4"/><path d="M20 19 L31 24.5 L20 30 Z" fill="currentColor" stroke="none"/></svg>
+        <div class="sec-kicker rv rv-down d1">Cuplikan</div>
+        <h2 class="sec-title rv rv-up d2">Seduhan Pertama</h2>
+        <p class="sec-sub rv rv-up d3">Sepotong kisah kami dalam bingkai bergerak</p>
       </div>
+      <img class="orn-img rv rv-pop d2" src="assets/undangya/kebun-teh/kt-cangkir-uap.webp" alt="" width="96">
       <div class="vid-frame rv rv-zoom">
         <div class="vid-stage">
           <video id="teaserVideo" src="assets/undangya/kebun-teh/teaser.mp4" poster="assets/undangya/kebun-teh/teaser-poster.webp" preload="none" playsinline controls aria-label="Video teaser Meyzsa dan Fahrezzi"></video>
@@ -427,56 +458,58 @@ body:not(.opened){overflow:hidden}
     <section id="live">
       <div class="mist" style="top:16%"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/pakis.webp" alt="" style="right:-30px;bottom:0;width:110px;animation-duration:9s;animation-delay:-4s">
-      <div class="sec-head rv rv-up">
-        <div class="sec-kicker">Live Streaming</div>
-        <h2 class="sec-title">Siaran Langsung</h2>
-        <p class="sec-sub">Untuk keluarga &amp; sahabat yang berhalangan hadir langsung</p>
+      <img class="sprite tegak" src="assets/undangya/kebun-teh/kt-pondok-mini.webp" alt="" style="left:-18px;bottom:0;width:96px;animation-duration:9.4s;animation-delay:-2s">
+      <div class="sec-head">
+        <div class="sec-kicker rv rv-down d1">Live Streaming</div>
+        <h2 class="sec-title rv rv-up d2">Siaran Langsung</h2>
+        <p class="sec-sub rv rv-up d3">Untuk keluarga &amp; sahabat yang berhalangan hadir langsung</p>
       </div>
       <div class="card rv rv-zoom" style="text-align:center">
-        <span class="live-badge"><span class="live-dot" aria-hidden="true"></span>LIVE · CONTOH</span>
-        <h3 class="sub-h" style="margin-top:12px">Resepsi Pernikahan</h3>
+        <span class="live-badge rv rv-pop"><span class="live-dot" aria-hidden="true"></span>LIVE · CONTOH</span>
+        <h3 class="sub-h rv rv-down" style="margin-top:12px">Resepsi Pernikahan</h3>
         <p style="font-size:13.5px;line-height:1.7"><b>Sabtu, 12 Juni 2027 · mulai 11.00 WIB</b><br>menyesuaikan jam resepsi — The Ritz-Carlton Jakarta, Pacific Place</p>
-        <div class="btn-row"><a class="btn" href="#" onclick="return false" aria-disabled="true">▶ TONTON LIVE</a></div>
-        <p class="demo-note">Tautan contoh (demo) — pada undangan asli, tombol ini mengarah ke siaran langsung mempelai dan aktif menjelang acara.</p>
-        <svg class="divider" viewBox="0 0 120 12" aria-hidden="true" style="width:120px"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
-        <div class="tag-big">#MeyzsaFahrezzi</div>
+        <div class="btn-row"><a class="btn rv rv-up d2" href="#" onclick="return false" aria-disabled="true">▶ TONTON LIVE</a></div>
+        <p class="demo-note rv rv-up d3">Tautan contoh (demo) — pada undangan asli, tombol ini mengarah ke siaran langsung mempelai dan aktif menjelang acara.</p>
+        <svg class="divider rv rv-zoom d2" viewBox="0 0 120 12" aria-hidden="true" style="width:120px"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
+        <div class="tag-big rv rv-zoom d1">#MeyzsaFahrezzi</div>
         <p style="font-size:12.5px;line-height:1.65;margin-top:4px">Abadikan momen bahagia Anda dan tandai dengan tagar resmi kami.</p>
-        <button class="salin-btn" type="button" data-copytext="#MeyzsaFahrezzi">SALIN TAGAR</button>
+        <button class="salin-btn rv rv-pop d2" type="button" data-copytext="#MeyzsaFahrezzi">SALIN TAGAR</button>
       </div>
       <div class="card rv rv-zoom" style="text-align:center">
-        <div class="sec-kicker">Galeri Tamu</div>
-        <h3 class="sub-h">Galeri Tamu</h3>
+        <div class="sec-kicker rv rv-down d1">Galeri Tamu</div>
+        <h3 class="sub-h rv rv-down">Galeri Tamu</h3>
         <p style="font-size:13px;line-height:1.7">Bagikan momen bahagia Anda selama acara — unggah foto Anda di sini dan tandai juga dengan tagar <b>#MeyzsaFahrezzi</b>.</p>
-        <label class="salin-btn" for="gtInput" style="cursor:pointer">＋ UNGGAH FOTO</label>
+        <label class="salin-btn rv rv-pop d2" for="gtInput" style="cursor:pointer">＋ UNGGAH FOTO</label>
         <input id="gtInput" type="file" accept="image/*" multiple hidden>
         <div class="gt-grid" id="gtGrid" aria-live="polite"></div>
         <p class="gt-empty" id="gtEmpty">Jadilah yang pertama membagikan momen — ketuk tombol unggah.</p>
-        <p class="demo-note">Contoh — foto tersimpan di perangkat ini saja (penyimpanan lokal peramban), tidak diunggah ke server.</p>
+        <p class="demo-note rv rv-up d3">Contoh — foto tersimpan di perangkat ini saja (penyimpanan lokal peramban), tidak diunggah ke server.</p>
       </div>
     </section>
 
     <!-- ================= RSVP ================= -->
     <section id="rsvp">
       <div class="mist m2" style="top:8%"></div>
-      <div class="sec-head rv rv-up">
-        <div class="sec-kicker">RSVP &amp; Ucapan</div>
-        <h2 class="sec-title">Konfirmasi &amp; Doa</h2>
-        <p class="sec-sub">Beritahu kami kehadiran Anda dan titipkan doa terbaik</p>
+      <div class="sec-head">
+        <div class="sec-kicker rv rv-down d1">RSVP &amp; Ucapan</div>
+        <h2 class="sec-title rv rv-up d2">Konfirmasi &amp; Doa</h2>
+        <p class="sec-sub rv rv-up d3">Beritahu kami kehadiran Anda dan titipkan doa terbaik</p>
       </div>
+      <img class="orn-img rv rv-rotl d2" src="assets/undangya/kebun-teh/kt-surat-daun.webp" alt="" width="102">
       <div class="card rv rv-up">
         <form id="rsvpForm">
-          <label class="f-label" for="rsvpName">NAMA</label>
-          <input class="f-in" id="rsvpName" type="text" placeholder="Nama Anda" autocomplete="name" required>
-          <label class="f-label" for="rsvpAttend">KONFIRMASI KEHADIRAN</label>
-          <select class="f-sel" id="rsvpAttend">
+          <label class="f-label rv rv-left" for="rsvpName">NAMA</label>
+          <input class="f-in rv rv-slide-r d1" id="rsvpName" type="text" placeholder="Nama Anda" autocomplete="name" required>
+          <label class="f-label rv rv-left" for="rsvpAttend">KONFIRMASI KEHADIRAN</label>
+          <select class="f-sel rv rv-slide-r d1" id="rsvpAttend">
             <option value="Hadir">Hadir, insya Allah</option>
             <option value="Ragu">Masih ragu</option>
             <option value="Berhalangan">Berhalangan hadir</option>
           </select>
-          <label class="f-label" for="rsvpMsg">UCAPAN &amp; DOA</label>
-          <textarea class="f-ta" id="rsvpMsg" placeholder="Tuliskan doa terbaik untuk kedua mempelai…" required></textarea>
-          <div class="btn-row"><button class="btn" type="submit">KIRIM UCAPAN</button></div>
-          <p class="demo-note">Demo — RSVP &amp; ucapan tersimpan di perangkat ini saja (penyimpanan lokal peramban), tidak terkirim ke server.</p>
+          <label class="f-label rv rv-left" for="rsvpMsg">UCAPAN &amp; DOA</label>
+          <textarea class="f-ta rv rv-slide-r d1" id="rsvpMsg" placeholder="Tuliskan doa terbaik untuk kedua mempelai…" required></textarea>
+          <div class="btn-row"><button class="btn rv rv-pop d2" type="submit">KIRIM UCAPAN</button></div>
+          <p class="demo-note rv rv-up d3">Demo — RSVP &amp; ucapan tersimpan di perangkat ini saja (penyimpanan lokal peramban), tidak terkirim ke server.</p>
         </form>
         <div class="wall" id="wishWall" aria-live="polite"></div>
       </div>
@@ -486,81 +519,85 @@ body:not(.opened){overflow:hidden}
     <section id="bukutamu">
       <div class="mist m3" style="top:22%"></div>
       <img class="sprite tegak" src="assets/undangya/kebun-teh/bunga-liar.webp" alt="" style="right:4px;top:44px;width:70px;animation-duration:7.4s">
-      <div class="sec-head rv rv-up">
-        <div class="sec-kicker">Buku Tamu</div>
-        <h2 class="sec-title">Check-in di Pondok Teh</h2>
-        <p class="sec-sub">Tunjukkan kode QR ini kepada petugas di meja registrasi saat tiba</p>
+      <img class="sprite gantung" src="assets/undangya/kebun-teh/kt-lentera-daun.webp" alt="" style="left:14px;top:-6px;width:44px;animation-duration:8.2s;animation-delay:-3s">
+      <div class="sec-head">
+        <div class="sec-kicker rv rv-down d1">Buku Tamu</div>
+        <h2 class="sec-title rv rv-up d2">Check-in di Pondok Teh</h2>
+        <p class="sec-sub rv rv-up d3">Tunjukkan kode QR ini kepada petugas di meja registrasi saat tiba</p>
       </div>
       <div class="card rv rv-zoom" style="text-align:center">
-        <div class="qr-box"><img src="assets/undangya/kebun-teh/qr-undangan.webp" alt="Kode QR menuju halaman undangan ini" loading="lazy" decoding="async"></div>
+        <div class="qr-box rv rv-zoom d1"><img src="assets/undangya/kebun-teh/qr-undangan.webp" alt="Kode QR menuju halaman undangan ini" loading="lazy" decoding="async"></div>
         <p style="font-size:12.5px;color:#5a6650;line-height:1.7">Kode QR menuju halaman undangan ini:<br><b style="color:var(--tea-deep)">yfarch0912.github.io/kebun-teh-preview</b></p>
-        <svg class="divider" viewBox="0 0 120 12" aria-hidden="true" style="width:120px"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
+        <svg class="divider rv rv-zoom d2" viewBox="0 0 120 12" aria-hidden="true" style="width:120px"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
         <form id="ciForm">
-          <label class="f-label" for="ciName">NAMA TAMU</label>
-          <input class="f-in" id="ciName" type="text" placeholder="Nama sesuai undangan" required>
-          <div class="btn-row"><button class="btn" type="submit">CHECK-IN (DEMO)</button></div>
+          <label class="f-label rv rv-left" for="ciName">NAMA TAMU</label>
+          <input class="f-in rv rv-slide-r d1" id="ciName" type="text" placeholder="Nama sesuai undangan" required>
+          <div class="btn-row"><button class="btn rv rv-pop d2" type="submit">CHECK-IN (DEMO)</button></div>
         </form>
-        <p class="demo-note" id="ciResult">Demo — check-in tercatat di perangkat ini saja untuk contoh alur buku tamu digital.</p>
+        <p class="demo-note rv rv-up d3" id="ciResult">Demo — check-in tercatat di perangkat ini saja untuk contoh alur buku tamu digital.</p>
       </div>
     </section>
 
     <!-- ================= AMPLOP & KADO ================= -->
     <section id="amplop">
       <div class="mist" style="top:12%"></div>
-      <div class="sec-head rv rv-up">
-        <div class="sec-kicker">Amplop Digital</div>
-        <h2 class="sec-title">Tanda Kasih</h2>
-        <p class="sec-sub">Doa restu Anda adalah hadiah terindah. Namun bila berkenan memberi tanda kasih, kami sediakan dengan terima kasih:</p>
+      <div class="sec-head">
+        <div class="sec-kicker rv rv-down d1">Amplop Digital</div>
+        <h2 class="sec-title rv rv-up d2">Tanda Kasih</h2>
+        <p class="sec-sub rv rv-up d3">Doa restu Anda adalah hadiah terindah. Namun bila berkenan memberi tanda kasih, kami sediakan dengan terima kasih:</p>
       </div>
+      <img class="orn-img rv rv-pop d2" src="assets/undangya/kebun-teh/kt-kado-daun.webp" alt="" width="94">
       <div class="card rv rv-up">
         <div class="bank-row">
-          <span class="bank-badge">BCA</span>
-          <div><div class="bank-num" id="numBca">1234567890</div><div class="bank-name">a.n. Meyzsa Putri Ananda</div></div>
-          <button class="copy-btn" type="button" data-copy="numBca">SALIN</button>
+          <span class="bank-badge rv rv-rot d1">BCA</span>
+          <div><div class="bank-num rv rv-up d2" id="numBca">1234567890</div><div class="bank-name rv rv-up d3">a.n. Meyzsa Putri Ananda</div></div>
+          <button class="copy-btn rv rv-pop d3" type="button" data-copy="numBca">SALIN</button>
         </div>
       </div>
       <div class="card rv rv-up">
         <div class="bank-row">
-          <span class="bank-badge" style="background:linear-gradient(150deg,#8a683f,var(--wood-d))">DANA</span>
-          <div><div class="bank-num" id="numDana">0812-3456-7890</div><div class="bank-name">a.n. Meyzsa Putri Ananda</div></div>
-          <button class="copy-btn" type="button" data-copy="numDana">SALIN</button>
+          <span class="bank-badge rv rv-rot d1" style="background:linear-gradient(150deg,#8a683f,var(--wood-d))">DANA</span>
+          <div><div class="bank-num rv rv-up d2" id="numDana">0812-3456-7890</div><div class="bank-name rv rv-up d3">a.n. Meyzsa Putri Ananda</div></div>
+          <button class="copy-btn rv rv-pop d3" type="button" data-copy="numDana">SALIN</button>
         </div>
-        <p class="demo-note">Nomor contoh (demo) untuk keperluan tampilan tema.</p>
+        <p class="demo-note rv rv-up d3">Nomor contoh (demo) untuk keperluan tampilan tema.</p>
       </div>
       <div class="card rv rv-up" style="text-align:center">
-        <h3 class="sub-h" style="font-size:26px">Kirim Kado Fisik</h3>
-        <p style="font-size:13px;line-height:1.8;color:#47543e" id="giftAddr">Kediaman Mempelai Wanita<br>Jl. Contoh Kebun Teh No. 12, Jakarta Selatan 12120</p>
-        <button class="salin-btn" type="button" data-copytext="Kediaman Mempelai Wanita, Jl. Contoh Kebun Teh No. 12, Jakarta Selatan 12120">SALIN ALAMAT</button>
-        <p class="demo-note">Alamat contoh (demo) untuk keperluan tampilan tema.</p>
+        <h3 class="sub-h rv rv-down" style="font-size:26px">Kirim Kado Fisik</h3>
+        <p style="font-size:13px;line-height:1.8;color:#47543e" id="giftAddr" class="rv rv-up d1">Kediaman Mempelai Wanita<br>Jl. Contoh Kebun Teh No. 12, Jakarta Selatan 12120</p>
+        <button class="salin-btn rv rv-pop d2" type="button" data-copytext="Kediaman Mempelai Wanita, Jl. Contoh Kebun Teh No. 12, Jakarta Selatan 12120">SALIN ALAMAT</button>
+        <p class="demo-note rv rv-up d3">Alamat contoh (demo) untuk keperluan tampilan tema.</p>
       </div>
     </section>
 
     <!-- ================= TURUT MENGUNDANG ================= -->
     <section id="turut">
-      <div class="sec-head rv rv-up">
-        <div class="sec-kicker">Turut Mengundang</div>
-        <h2 class="sec-title">Keluarga Besar</h2>
+      <div class="sec-head">
+        <div class="sec-kicker rv rv-down d1">Turut Mengundang</div>
+        <h2 class="sec-title rv rv-up d2">Keluarga Besar</h2>
       </div>
+      <img class="orn-img rv rv-up d1" src="assets/undangya/kebun-teh/kt-sulur-daun.webp" alt="" width="250" style="margin-bottom:10px">
       <div class="turut-list rv rv-up">
-        Keluarga Besar H. Muhammad Ridwan &amp; Hj. Siti Aminah<br>
-        Keluarga Besar H. Bambang Sutrisno &amp; Hj. Ratna Dewi<br>
-        Bapak H. Ahmad Suryana (Paman Mempelai Wanita)<br>
-        Ibu Hj. Dewi Lestari (Bibi Mempelai Pria)<br>
-        Seluruh Keluarga Besar Kebun Teh Ananda &amp; Pratama
+        <span class="turut-line rv rv-up d1">Keluarga Besar H. Muhammad Ridwan &amp; Hj. Siti Aminah</span>
+        <span class="turut-line rv rv-up d2">Keluarga Besar H. Bambang Sutrisno &amp; Hj. Ratna Dewi</span>
+        <span class="turut-line rv rv-up d3">Bapak H. Ahmad Suryana (Paman Mempelai Wanita)</span>
+        <span class="turut-line rv rv-up d4">Ibu Hj. Dewi Lestari (Bibi Mempelai Pria)</span>
+        <span class="turut-line rv rv-up d5">Seluruh Keluarga Besar Kebun Teh Ananda &amp; Pratama</span>
       </div>
     </section>
 
     <!-- ================= PENUTUP ================= -->
     <section id="penutup" style="text-align:center">
       <div class="fall-field sec-fall" aria-hidden="true"></div>
-      <div class="sec-head rv rv-up">
-        <div class="sec-kicker" style="color:var(--sage)">Penutup</div>
-        <h2 class="sec-title">Sampai Jumpa di Hari Bahagia</h2>
+      <div class="sec-head">
+        <div class="sec-kicker rv rv-down d1" style="color:#d7e6c2;background:rgba(20,34,16,.5)">Penutup</div>
+        <h2 class="sec-title rv rv-up d2">Sampai Jumpa di Hari Bahagia</h2>
       </div>
+      <img class="orn-img rv rv-zoom d1" src="assets/undangya/kebun-teh/kt-terasering-mini.webp" alt="" width="252">
       <p class="rv rv-up" style="font-size:13.5px;line-height:1.9;max-width:320px;margin:0 auto;position:relative;z-index:3">Merupakan suatu kehormatan dan kebahagiaan bagi kami beserta keluarga apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kedua mempelai. Atas kehadiran serta doa yang tulus, kami mengucapkan terima kasih yang sebesar-besarnya.</p>
       <p class="rv rv-up" style="font-size:13px;margin-top:20px;position:relative;z-index:3">Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
       <p class="script rv rv-zoom" style="font-size:42px;margin-top:14px;color:#fff8e2;position:relative;z-index:3">Meyzsa &amp; Fahrezzi</p>
-      <svg class="divider" viewBox="0 0 120 12" aria-hidden="true" style="width:120px;position:relative;z-index:3"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
+      <svg class="divider rv rv-zoom d2" viewBox="0 0 120 12" aria-hidden="true" style="width:120px;position:relative;z-index:3"><path d="M2 6 H44 M76 6 H118" stroke="#b98d4f" stroke-width="1.4"/><path d="M60 1 L65 6 L60 11 L55 6 Z" fill="none" stroke="#b98d4f" stroke-width="1.4"/></svg>
       <p class="foot-note rv rv-up" style="position:relative;z-index:3">Undangan digital contoh “Kebun Teh Pegunungan” oleh UndangYa! — seluruh nama, tanggal, dan nomor adalah data contoh.<br>Musik latar: “Petals on the Stone Floor”.</p>
     </section>
   </main>
@@ -634,7 +671,7 @@ body:not(.opened){overflow:hidden}
   function initReveal(){
     var items = document.querySelectorAll(".rv");
     if(!("IntersectionObserver" in window) || reduced){ items.forEach(function(e){ e.classList.add("in"); }); return; }
-    io = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } }); }, { threshold:.12 });
+    io = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } }); }, { threshold:.08, rootMargin:'0px 900px 320px 900px' });
     items.forEach(function(e){ io.observe(e); });
   }
 
