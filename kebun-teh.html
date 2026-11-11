@@ -50,7 +50,7 @@ section{position:relative;padding:64px 22px 56px;overflow:hidden}
 /* ---- daun melayang CSS ---- */
 .fall-field{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:2}
 .fall{position:absolute;top:-8%;opacity:0;animation:fallDown linear infinite;will-change:transform,opacity}
-.fall img{width:100%;display:block;animation:fallSway ease-in-out infinite alternate}
+.fall img{width:100%;display:block;animation:fallSway ease-in-out infinite alternate;filter:hue-rotate(74deg) saturate(.75) brightness(1.02)}
 @keyframes fallDown{0%{transform:translateY(0) rotate(0deg);opacity:0}8%{opacity:.9}92%{opacity:.85}100%{transform:translateY(112vh) rotate(300deg);opacity:0}}
 @keyframes fallSway{from{transform:translateX(-9px) rotate(-14deg)}to{transform:translateX(9px) rotate(14deg)}}
 /* ---- sprite anchor ---- */
